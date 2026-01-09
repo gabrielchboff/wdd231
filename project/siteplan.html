@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site Plan - Porto Alegre Chamber of Commerce</title>
+	<meta name="description" content="Site plan for the Porto Alegre Chamber of Commerce, including purpose, goals, personas, and specifications.">
+	<style>
+		:root {
+			--primary: #2a5d84;
+			--secondary: #f4b942;
+			--background: #f9f9f9;
+			--text: #222222;
+			--contrast: #fff;
+		}
+		html { box-sizing: border-box; }
+		*, *:before, *:after { box-sizing: inherit; }
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background: var(--background);
+			color: var(--text);
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+		}
+		header {
+			background: var(--primary);
+			color: var(--contrast);
+			padding: 1rem 0;
+		}
+		nav {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			flex-wrap: wrap;
+		}
+		nav a {
+			color: var(--contrast);
+			text-decoration: none;
+			font-weight: bold;
+			padding: 0.5rem 1rem;
+			border-radius: 4px;
+			transition: background 0.2s;
+		}
+		nav a.active, nav a:focus, nav a:hover {
+			background: var(--secondary);
+			color: var(--text);
+		}
+		main {
+			max-width: 900px;
+			margin: 2rem auto;
+			background: #fff;
+			padding: 2rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+		}
+		h1, h2, h3 {
+			color: var(--primary);
+		}
+		ul, ol { margin-left: 2rem; }
+		.section { margin-bottom: 2rem; }
+		.brief-table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+		.brief-table th, .brief-table td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+		.brief-table th { background: #e3f0fa; }
+		.personas { margin-top: 0.5rem; }
+		.personas strong { display: block; margin-top: 0.5rem; }
+		@media (max-width: 600px) {
+			main { padding: 1rem; }
+			nav { gap: 0.5rem; }
+		}
+		/* Site map diagram styles moved to end of file */
+	</style>
+</head>
+<body>
+	<header>
+		<nav aria-label="Main Navigation">
+			<a href="#" class="active">Site Plan</a>
+		</nav>
+	</header>
+	<main>
+		<h1>Site Plan: Porto Alegre Chamber of Commerce</h1>
+
+		<section class="section">
+			<h2>Site Name</h2>
+			<p>Porto Alegre Chamber of Commerce</p>
+		</section>
+	<!-- Site Map moved to end of file -->
+
+		<section class="section">
+			<h2>Site Purpose</h2>
+			<p>This website will serve as a resource hub for businesses in the city of Porto Alegre. It will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. The site aims to promote local economic growth, support local businesses, and foster a sense of community among businesses.</p>
+		</section>
+
+		<section class="section">
+			<h2>Target Market</h2>
+			<p>Business owners and patrons in the city of Porto Alegre and surrounding areas.</p>
+		</section>
+
+		<section class="section">
+			<h2>Site Goals</h2>
+			<ul>
+				<li>Improve member engagement by providing valuable resources and networking opportunities.</li>
+				<li>Attract new businesses and encourage economic development in the community.</li>
+				<li>Improve the visibility and reputation of the chamber as a trusted authority in local business matters.</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2>User Personas</h2>
+			<div class="personas">
+				<strong>Small Business Owner:</strong> Maria, 35, owns a boutique shop. Seeks networking, business resources, and marketing support.<br>
+				<strong>Corporate Executive:</strong> Diego, 47, executive at a large company. Interested in partnerships, economic development, and networking.<br>
+				<strong>New Resident:</strong> Francisco, recently moved to Porto Alegre. Wants to learn about local services, business directories, events, and community opportunities.
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Scenarios</h2>
+			<ul>
+				<li>A business owner visits the site to find membership benefits, fees, and application info.</li>
+				<li>A community member browses the events calendar and registers for activities.</li>
+				<li>A visitor explores the site for information on local businesses, workforce, and quality of life.</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2>SEO Plan</h2>
+			<ul>
+				<li>Use relevant keywords in site descriptions, content, and blog posts.</li>
+				<li>Verify the site on Google’s Business Profile.</li>
+				<li>Get inbound links from member businesses.</li>
+				<li>Embed Google Analytics on all pages.</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2>Design Brief</h2>
+			<table class="brief-table">
+				<tr><th>Primary Color</th><td>#2a5d84</td></tr>
+				<tr><th>Secondary Color</th><td>#f4b942</td></tr>
+				<tr><th>Background Color</th><td>#f9f9f9</td></tr>
+				<tr><th>Text Color</th><td>#222222</td></tr>
+				<tr><th>Font Family</th><td>Arial, Helvetica, sans-serif</td></tr>
+			</table>
+		</section>
+
+		<section class="section">
+			<h2>Overview</h2>
+			<p>The website will apply course concepts to create a responsive, standards-based chamber of commerce site for Porto Alegre. The site will promote business interests, foster networking, and advocate for the community.</p>
+		</section>
+
+		<section class="section">
+			<h2>What is a Chamber of Commerce?</h2>
+			<p>A chamber of commerce is a local organization of businesses working together to strengthen business interests, foster networking, and advocate for the community.</p>
+		</section>
+
+		<section class="section">
+			<h2>Page Specifications</h2>
+			<ul>
+				<li><strong>Home:</strong> Attention-grabbing info, community news, weather, calls to action, business spotlights.</li>
+				<li><strong>Discover:</strong> Local history, demographics, current events, image montage of the area.</li>
+				<li><strong>Directory:</strong> List of local businesses and organizations.</li>
+				<li><strong>Join:</strong> Membership benefits, application form, three membership levels (non-profit, silver, gold) with different perks.</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2>Developmental Specifications</h2>
+			<ul>
+				<li>Valid, semantic, and contemporary HTML, CSS, and JavaScript.</li>
+				<li>Consistent design and navigation across all pages.</li>
+				<li>Responsive design for mobile and desktop.</li>
+				<li>Meets all functional, content, and behavior specifications.</li>
+				<li>Positive user experience with standard design principles and easy-to-use interfaces.</li>
+				<li>Published site meets course learning outcomes.</li>
+			</ul>
+		</section>
+		<section class="section">
+			<h2>Wireframes</h2>
+			<p>Below are the wireframes for the main pages of the Porto Alegre Chamber of Commerce website. These serve as layout and design references for development.</p>
+			<div class="wireframes" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+				<figure>
+					<img src="images/1.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/2.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/3.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/4.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/5.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/6.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/7.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/8.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+                <figure>
+					<img src="images/9.png" style="max-width:650px;height:auto;border:1px solid #ccc;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+				</figure>
+				
+			</div>
+		</section>
+		<h2>Site Map</h2>
+		<div class="sitemap-diagram" aria-label="Site Map Diagram">
+			<div class="sitemap-row">
+				<div class="sitemap-box active">Home</div>
+				<div class="sitemap-box active">Discover</div>
+				<div class="sitemap-box active">Directory</div>
+				<div class="sitemap-box active">Join</div>
+				<div class="sitemap-box active">About</div>
+			</div>
+		</div>
+		<style>
+			.sitemap-diagram {
+				width: 100%;
+				margin: 2rem 0 1rem 0;
+				position: relative;
+				height: 120px;
+			}
+			.sitemap-row {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				position: absolute;
+				top: 20px;
+				left: 0;
+				width: 100%;
+			}
+			.sitemap-box {
+				width: 120px;
+				height: 60px;
+				border: 2px solid #888;
+				border-radius: 6px;
+				background: #fff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.1rem;
+				font-weight: 500;
+				margin-top: 0;
+				box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+				z-index: 2;
+			}
+			.sitemap-box.active {
+				color: #222;
+				border-color: #222;
+				font-weight: bold;
+			}
+			.sitemap-box.inactive {
+				color: #bbb;
+				border-color: #bbb;
+				background: #fafafa;
+			}
+		</style>
+	</section>
+
+	</main>
+	
+	<footer style="background: #2a5d84; color: #fff; text-align: center; padding: 1rem 0; margin-top: 2rem;">
+		<small>&copy; <span id="year"></span> Porto Alegre Chamber of Commerce. Last Modified: <span id="lastmod"></span></small>
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+			document.getElementById('lastmod').textContent = document.lastModified;
+		</script>
+	</footer>
+</body>
+</html>
