@@ -1,0 +1,66 @@
+{
+  "ward": "Riverside 3rd Ward",
+  "families": [
+    {
+      "family_name": "Kim",
+      "move_in_date": "2024-01-08",
+      "number_of_people": 3,
+      "visited_by_bishopric": false,
+      "family_members": [
+        {
+          "name": "James Kim",
+          "gender": "Male",
+          "birthdate": "1995-09-30"
+        },
+        {
+          "name": "Sarah Kim",
+          "gender": "Female",
+          "birthdate": "1996-11-25"
+        },
+        {
+          "name": "Noah Kim",
+          "gender": "Male",
+          "birthdate": "2020-02-14"
+        }
+      ]
+    },
+    {
+      "family_name": "Martinez",
+      "move_in_date": "2023-08-15",
+      "number_of_people": 6,
+      "visited_by_bishopric": true,
+      "family_members": [
+        {
+          "name": "Carlos Martinez",
+          "gender": "Male",
+          "birthdate": "1982-01-10"
+        },
+        {
+          "name": "Isabella Martinez",
+          "gender": "Female",
+          "birthdate": "1984-06-05"
+        },
+        {
+          "name": "Sofia Martinez",
+          "gender": "Female",
+          "birthdate": "2005-10-20"
+        },
+        {
+          "name": "Miguel Martinez",
+          "gender": "Male",
+          "birthdate": "2007-03-15"
+        },
+        {
+          "name": "Lucia Martinez",
+          "gender": "Female",
+          "birthdate": "2012-08-08"
+        },
+        {
+          "name": "Diego Martinez",
+          "gender": "Male",
+          "birthdate": "2014-12-22"
+        }
+      ]
+    }
+  ]
+}
