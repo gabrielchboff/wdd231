@@ -1,12 +1,12 @@
 /* MAIN CONTENT */
 main {
-    flex: 1;
     margin-top: 64px;
     padding: 2rem 1rem;
     max-width: 1400px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    flex: 1;
 }
 
 .page-header {
@@ -21,7 +21,6 @@ main {
     margin: 0 0 0.5rem 0;
 }
 
-/* Fixed Contrast: Darkened from #666 to #444 */
 .page-header p {
     color: #444; 
     font-size: 1.1rem;
@@ -48,7 +47,7 @@ main {
     background: var(--contrast);
     border: 2px solid var(--primary);
     color: var(--primary);
-    padding: 0.75rem 1.5rem; /* Increased touch target size */
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
     border-radius: 6px;
     font-size: 1rem;
@@ -62,7 +61,8 @@ main {
     outline-offset: 2px;
 }
 
-.view-btn:hover, .view-btn.active {
+.view-btn:hover,
+.view-btn.active {
     background: var(--primary);
     color: var(--contrast);
 }
@@ -70,6 +70,7 @@ main {
 /* DIRECTORY CONTAINER */
 #directory {
     margin: 4rem 0;
+    min-height: 50vh;
 }
 
 /* GRID VIEW */
@@ -94,13 +95,12 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* CLS FIX: Aspect Ratio forces space reservation */
 .member-image {
     width: 100%;
     aspect-ratio: 4 / 3; 
     border-radius: 6px;
     margin-bottom: 1rem;
-    background: #f0f0f0; /* Fallback color */
+    background: #f0f0f0;
     overflow: hidden;
     position: relative;
 }
@@ -145,7 +145,6 @@ main {
     margin: 0.5rem 0;
 }
 
-/* Fixed Contrast: Darkened from #888 to #595959 */
 .member-category {
     color: #595959;
     font-size: 0.95rem;
@@ -154,10 +153,10 @@ main {
 }
 
 .member-description {
-    color: #444; /* Improved contrast */
+    color: #444;
     line-height: 1.5;
     margin: 0.75rem 0;
-    flex-grow: 1; /* Pushes contact info down */
+    flex-grow: 1;
 }
 
 .member-contact {
@@ -169,7 +168,7 @@ main {
 
 .member-contact p {
     margin: 0.4rem 0;
-    color: #444; /* Improved contrast */
+    color: #444;
     font-size: 0.95rem;
     display: flex;
     gap: 0.5rem;
@@ -178,7 +177,7 @@ main {
 
 .member-contact a {
     color: var(--primary);
-    text-decoration: underline; /* Accessibility: Links should look like links */
+    text-decoration: underline;
     text-underline-offset: 2px;
 }
 
@@ -231,8 +230,49 @@ main {
 }
 
 @media (min-width: 900px) {
+    .main-navbar { padding: 1rem 2rem; }
+    #navToggle { display: none; }
+    
+    .nav-links {
+        position: static;
+        width: auto;
+        max-width: none;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: transparent;
+        color: var(--primary);
+        border-bottom-color: var(--primary);
+    }
+
+    .nav-login-li { display: none; }
+    .nav-login-btn { display: inline-block; }
+
+    main { padding: 2rem 2rem; }
+    .page-header h1 { font-size: 2.5rem; }
+
     .member-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .member-list .member-card {
+        grid-template-columns: 250px 1fr;
     }
 }
 

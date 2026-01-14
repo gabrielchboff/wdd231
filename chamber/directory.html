@@ -9,7 +9,12 @@
         />
         <meta name="author" content="Gabriel Boff" />
         
-        <link rel="preload" href="styles/main.css" as="style" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/main.css" as="style" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/home.css" />
         <link rel="stylesheet" href="styles/directory.css" />
@@ -19,13 +24,14 @@
         />
 
         <link rel="icon" href="favicon.ico" />
+        <script src="scripts/directory.js" defer></script>
         <title>Member Directory | Porto Alegre Business Chamber</title>
     </head>
     <body>
         <header>
             <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
                 <div class="nav-left">
-                    <div class="nav-logo" style="width: 40px; height: 40px;">PA</div>
+                    <div class="nav-logo">PA</div>
                     <div class="nav-titles">
                         <span class="nav-title-main">Porto Alegre</span>
                         <span class="nav-title-sub">Business Chamber</span>
@@ -80,7 +86,7 @@
                 </button>
             </div>
 
-            <div id="directory" class="member-grid" style="min-height: 50vh;">
+            <div id="directory" class="member-grid">
                 <div class="loading" role="status">Loading members...</div>
             </div>
         </main>
@@ -136,12 +142,8 @@
                     <a href="#">Sitemap</a>
                 </div>
             </div>
-            <script>
-                document.getElementById("year").textContent =
-                    new Date().getFullYear();
-            </script>
+          
         </footer>
-        <script src="scripts/directory.js"></script>
         
         <meta property="og:title" content="Facebook" />
         <meta
@@ -150,7 +152,7 @@
         />
         <meta
             property="og:image"
-            content="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+            content="images/facebook.webp"
         />
         <meta property="og:url" content="https://www.facebook.com/" />
     </body>

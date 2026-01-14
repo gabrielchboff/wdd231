@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent =
+                    new Date().getFullYear();
     const directory = document.getElementById("directory");
     const gridBtn = document.getElementById("gridBtn");
     const listBtn = document.getElementById("listBtn");
