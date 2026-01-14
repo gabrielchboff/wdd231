@@ -1,0 +1,613 @@
+/* WDD 231 Course Home Page - Base CSS (Mobile First) */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Root Variables */
+:root {
+    --primary-color: #2a5d84;
+    --secondary-color: #f4b942;
+    --accent-color: #1a4d6f;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --white: #fff;
+    --border-color: #ddd;
+    --success-color: #4caf50;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.student-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Hamburger Menu Button */
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+}
+
+#menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    transition: all 0.3s;
+    border-radius: 2px;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--accent-color);
+    box-shadow: var(--shadow);
+    display: none;
+    width: 100%;
+    order: 4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Card Styles */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.course-info p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Course Cards */
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.course-card {
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--accent-color)
+    );
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-card.completed {
+    background: linear-gradient(135deg, var(--success-color), #45a049);
+    border: 3px solid #2e7d32;
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Credits Display */
+.credits {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#total-credits {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--white);
+    transition:
+        transform 0.3s,
+        color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+#lastModified {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+/* Accessibility */
+:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========================================
+   TABLET AND DESKTOP STYLES - 768px and up
+   ======================================== */
+@media (min-width: 768px) {
+    /* Header */
+    header {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content {
+        flex: 0 0 auto;
+    }
+
+    .student-name {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Hide hamburger menu on larger screens */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Horizontal Navigation - Always visible on desktop */
+    nav {
+        display: flex !important;
+        position: static;
+        width: auto;
+        order: 0;
+        background-color: transparent;
+        box-shadow: none;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0;
+    }
+
+    nav li {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    /* Main Content */
+    main {
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Card Layout */
+    .card {
+        padding: 2rem;
+    }
+
+    /* Course Cards Grid - 2 columns */
+    #course-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .course-card {
+        padding: 1.5rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Filter Buttons */
+    .filter-buttons {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .filter-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.05rem;
+    }
+
+    /* Credits */
+    .credits {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    #total-credits {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2.5rem 2rem;
+    }
+
+    .social-links {
+        gap: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   LARGE DESKTOP STYLES - 1024px and up
+   ======================================== */
+@media (min-width: 1024px) {
+    /* Header */
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    .header-content {
+        gap: 1.5rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .student-name {
+        font-size: 1.75rem;
+    }
+
+    /* Navigation */
+    nav a {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Main Content */
+    main {
+        margin: 3rem auto;
+        padding: 0 3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Card Layout */
+    .card {
+        padding: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Course Cards Grid - 3 columns */
+    #course-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .course-card {
+        padding: 2rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .course-card p {
+        font-size: 1rem;
+    }
+
+    /* Filter Buttons */
+    .filter-btn {
+        padding: 0.875rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Credits */
+    .credits {
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+
+    #total-credits {
+        font-size: 1.75rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3rem 3rem;
+    }
+
+    .social-links {
+        gap: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-links a svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    footer p {
+        font-size: 1.05rem;
+    }
+
+    #lastModified {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   EXTRA LARGE SCREENS - 1440px and up
+   ======================================== */
+@media (min-width: 1440px) {
+    /* Main Content */
+    main {
+        max-width: 1400px;
+    }
+
+    /* Course Cards Grid - 4 columns for very large screens */
+    #course-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    header,
+    nav,
+    footer,
+    .filter-buttons {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+
+    .course-card {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #ddd;
+    }
+}

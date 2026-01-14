@@ -1,0 +1,112 @@
+{
+  "members": [
+    {
+      "name": "TechSolutions Porto",
+      "address": "Av. Carlos Gomes, 1234, Porto Alegre, RS",
+      "phone": "(51) 3333-4444",
+      "website": "https://www.techsolutions.com.br",
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400",
+      "membershipLevel": 3,
+      "category": "Technology",
+      "yearFounded": 2010,
+      "employees": 45,
+      "description": "Leading IT services and consulting firm specializing in digital transformation for local businesses."
+    },
+    {
+      "name": "Café Central",
+      "address": "Rua da Praia, 567, Centro Histórico, Porto Alegre, RS",
+      "phone": "(51) 3333-5555",
+      "website": "https://www.cafecentral.com.br",
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400",
+      "membershipLevel": 2,
+      "category": "Food & Beverage",
+      "yearFounded": 1993,
+      "employees": 12,
+      "description": "Family-owned coffee shop and bakery serving the community for over 30 years with authentic Brazilian flavors."
+    },
+    {
+      "name": "Green Living Co.",
+      "address": "Rua Ramiro Barcelos, 890, Moinhos de Vento, Porto Alegre, RS",
+      "phone": "(51) 3333-6666",
+      "website": "https://www.greenliving.com.br",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400",
+      "membershipLevel": 3,
+      "category": "Sustainability",
+      "yearFounded": 2015,
+      "employees": 28,
+      "description": "Sustainable products and eco-friendly solutions for homes and businesses committed to environmental responsibility."
+    },
+    {
+      "name": "Porto Legal Services",
+      "address": "Av. Borges de Medeiros, 2345, Centro, Porto Alegre, RS",
+      "phone": "(51) 3333-7777",
+      "website": "https://www.portolegal.com.br",
+      "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400",
+      "membershipLevel": 2,
+      "category": "Legal Services",
+      "yearFounded": 2005,
+      "employees": 18,
+      "description": "Full-service law firm providing business law, contracts, and legal consultation to local enterprises."
+    },
+    {
+      "name": "Community Food Bank",
+      "address": "Rua Voluntários da Pátria, 1500, Porto Alegre, RS",
+      "phone": "(51) 3333-8888",
+      "website": "https://www.communityfoodbank.org.br",
+      "image": "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400",
+      "membershipLevel": 1,
+      "category": "Non-Profit",
+      "yearFounded": 2008,
+      "employees": 8,
+      "description": "Non-profit organization dedicated to fighting hunger and supporting families in need throughout Porto Alegre."
+    },
+    {
+      "name": "Bella Vita Restaurant",
+      "address": "Rua Padre Chagas, 678, Moinhos de Vento, Porto Alegre, RS",
+      "phone": "(51) 3333-9999",
+      "website": "https://www.bellavita.com.br",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400",
+      "membershipLevel": 2,
+      "category": "Food & Beverage",
+      "yearFounded": 2009,
+      "employees": 22,
+      "description": "Authentic Italian cuisine with a Brazilian twist, offering fine dining experience for over 15 years."
+    },
+    {
+      "name": "Porto Fitness Center",
+      "address": "Av. Independência, 3456, Centro, Porto Alegre, RS",
+      "phone": "(51) 3333-0000",
+      "website": "https://www.portofitness.com.br",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400",
+      "membershipLevel": 3,
+      "category": "Health & Wellness",
+      "yearFounded": 2012,
+      "employees": 35,
+      "description": "State-of-the-art fitness facility with personal training, group classes, and wellness programs."
+    },
+    {
+      "name": "Children's Learning Academy",
+      "address": "Rua São Luís, 2100, Porto Alegre, RS",
+      "phone": "(51) 3333-1111",
+      "website": "https://www.childrensacademy.org.br",
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400",
+      "membershipLevel": 1,
+      "category": "Education",
+      "yearFounded": 2011,
+      "employees": 15,
+      "description": "Non-profit educational center providing after-school programs and tutoring for underprivileged children."
+    },
+    {
+      "name": "Andrade Construction",
+      "address": "Av. Assis Brasil, 4567, Porto Alegre, RS",
+      "phone": "(51) 3333-2222",
+      "website": "https://www.andradeconstruction.com.br",
+      "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400",
+      "membershipLevel": 3,
+      "category": "Construction",
+      "yearFounded": 2000,
+      "employees": 67,
+      "description": "Premier construction and renovation company building Porto Alegre's future one project at a time."
+    }
+  ]
+}

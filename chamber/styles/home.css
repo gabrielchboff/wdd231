@@ -1,0 +1,633 @@
+/* HOME PAGE SPECIFIC STYLES */
+
+/* Reset main for home page */
+.home-main {
+    max-width: 100%;
+    margin: 64px 0 0 0;
+    padding: 0;
+    background: var(--background);
+    border-radius: 0;
+    box-shadow: none;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(135deg, #2a5d84 0%, #1a3d5a 100%);
+    color: #fff;
+    padding: 3rem 2rem;
+    margin-bottom: 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: #222;
+}
+
+.btn-primary:hover {
+    background: #e5a830;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+/* CTA Cards */
+.cta-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-card {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cta-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.cta-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.cta-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.cta-link:hover {
+    color: var(--secondary);
+}
+
+/* Weather Section */
+.weather-section {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.weather-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    background: linear-gradient(135deg, #e3f0fa 0%, #d0e7f7 100%);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.weather-loading {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Events Section */
+.events-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.events-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    min-width: 70px;
+    height: fit-content;
+}
+
+.event-day {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+}
+
+.event-info h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.event-time,
+.event-location {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+}
+
+.event-info p {
+    color: #555;
+    line-height: 1.5;
+    margin-top: 0.75rem;
+}
+
+/* Business Spotlights */
+.spotlights-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.spotlights-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.spotlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.spotlight-image {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #2a5d84 0%, #1a3d5a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-spotlight {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.spotlight-content {
+    padding: 1.5rem;
+}
+
+.spotlight-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.spotlight-category {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.spotlight-contact {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.spotlight-contact p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+}
+
+/* Join Banner */
+.join-banner {
+    background: linear-gradient(135deg, var(--secondary) 0%, #d9a030 100%);
+    padding: 3rem 2rem;
+    margin: 3rem 0 0 0;
+    text-align: center;
+}
+
+.join-banner-content h2 {
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.join-banner-content p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-banner {
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-banner:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-section {
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .cta-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-main {
+        margin-top: 64px;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .placeholder-image {
+        height: 200px;
+    }
+
+    .cta-cards {
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .weather-section,
+    .events-section,
+    .spotlights-section {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem auto;
+    }
+
+    .events-grid,
+    .spotlights-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .event-card {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .event-date {
+        min-width: 70px;
+        flex-direction: column;
+    }
+
+    .join-banner {
+        padding: 2rem 1rem;
+    }
+
+    .join-banner-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .join-banner-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-main {
+        margin-top: 56px;
+    }
+
+    .hero-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.875rem 1.25rem;
+    }
+
+    .placeholder-image {
+        height: 180px;
+        font-size: 1rem;
+    }
+
+    .cta-cards {
+        padding: 1.5rem 0.75rem;
+        gap: 1rem;
+    }
+
+    .cta-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .cta-icon {
+        font-size: 2.5rem;
+    }
+
+    .cta-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .weather-section,
+    .events-section,
+    .spotlights-section {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .weather-section h2,
+    .events-section h2,
+    .spotlights-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .weather-widget {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .event-card {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .event-date {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.75rem;
+    }
+
+    .event-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .spotlight-content {
+        padding: 1.25rem;
+    }
+
+    .spotlight-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .join-banner {
+        padding: 1.75rem 0.75rem;
+    }
+
+    .join-banner-content h2 {
+        font-size: 1.35rem;
+    }
+
+    .join-banner-content p {
+        font-size: 0.95rem;
+    }
+
+    .btn-banner {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .cta-cards {
+        padding: 1.25rem 0.5rem;
+    }
+
+    .weather-section,
+    .events-section,
+    .spotlights-section {
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* SITE PLAN SPECIFIC STYLES */
+.siteplan-main {
+    max-width: 100%;
+    margin: 64px 0 0 0;
+    padding: 0;
+    background: var(--background);
+    border-radius: 0;
+    box-shadow: none;
+    align-items: stretch;
+    width: 100%;
+}
+
+.content-section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 900px) {
+    .siteplan-main {
+        margin-top: 64px;
+    }
+
+    .content-section {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .siteplan-main {
+        margin-top: 56px;
+    }
+
+    .content-section {
+        padding: 1rem 0.75rem;
+    }
+}
