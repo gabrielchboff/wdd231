@@ -1,4 +1,3 @@
-/* ROOT VARIABLES */
 :root {
     --primary: #2a5d84;
     --secondary: #f4b942;
@@ -7,7 +6,6 @@
     --contrast: #fff;
 }
 
-/* BASE STYLES */
 html {
     box-sizing: border-box;
     max-width: 100vw;
@@ -31,7 +29,6 @@ body {
     overflow-x: hidden;
 }
 
-/* HEADER */
 header {
     background: #fff;
     color: #222;
@@ -40,7 +37,6 @@ header {
     z-index: 100;
 }
 
-/* NAVIGATION */
 .main-navbar {
     position: fixed;
     top: 0;
@@ -246,7 +242,7 @@ a:hover {
 
 .brief-table th,
 .brief-table td {
-    border: 1px solid #ccc;
+    border: 1px solid ebebeb;
     padding: 0.5rem;
     text-align: left;
 }
@@ -322,7 +318,7 @@ a:hover {
 
 /* FOOTER */
 .site-footer {
-    background: linear-gradient(135deg, #232323 60%, #444 100%);
+    background: linear-gradient(135deg, #141414 60%, #444 100%);
     color: #fff;
     padding: 2rem 1rem 1rem 1rem;
     border-radius: 0 0 10px 10px;
@@ -370,13 +366,13 @@ a:hover {
 
 .site-footer .footer-title-sub {
     font-size: 0.95rem;
-    color: #ccc;
+    color: #ebebeb;
     line-height: 1.1;
 }
 
 .site-footer .footer-desc {
     margin: 0.5rem 0 0 0;
-    color: #ccc;
+    color: ebebeb;
     font-size: 0.97rem;
 }
 
@@ -410,7 +406,7 @@ a:hover {
 }
 
 .site-footer .footer-links-list a {
-    color: #ccc;
+    color: ebebeb;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -446,7 +442,7 @@ a:hover {
     border-top: 1px solid #444;
     padding-top: 1rem;
     font-size: 0.95rem;
-    color: #ccc;
+    color: ebebeb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,7 +457,7 @@ a:hover {
 }
 
 .site-footer .footer-bottom-links a {
-    color: #ccc;
+    color: ebebeb;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -692,143 +688,3 @@ a:hover {
     }
 }
 
-.view-controls {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-.view-btn {
-    background: var(--contrast);
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    padding: 0.625rem 1.25rem;
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.3s;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.view-btn:hover {
-    background: var(--primary);
-    color: var(--contrast);
-}
-
-.view-btn.active {
-    background: var(--primary);
-    color: var(--contrast);
-}
-
-/* DIRECTORY CONTAINER */
-#directory {
-    margin: 2rem 0;
-}
-
-/* GRID VIEW */
-.member-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.member-card {
-    background: var(--contrast);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    transition:
-        transform 0.3s,
-        box-shadow 0.3s;
-}
-
-.member-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.member-logo {
-    background: #f0f0f0;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    border-radius: 6px;
-    color: #999;
-    font-size: 0.9rem;
-}
-
-.member-level {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
-.member-level.gold {
-    background: var(--secondary);
-    color: var(--text);
-}
-
-.member-level.silver {
-    background: #c0c0c0;
-    color: #333;
-}
-
-.member-level.nonprofit {
-    background: #4caf50;
-    color: var(--contrast);
-}
-
-.member-name {
-    color: var(--primary);
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.member-description {
-    color: #555;
-    line-height: 1.5;
-    margin: 0.75rem 0;
-}
-
-.member-contact {
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-    margin-top: 1rem;
-}
-
-.member-contact p {
-    margin: 0.25rem 0;
-    color: #666;
-    font-size: 0.95rem;
-}
-
-/* LIST VIEW */
-.member-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.member-list .member-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.member-list .member-logo {
-    height: 80px;
-    width: 100%;
-}
-
-.member-list .member-info {
-    flex: 1;
-}
