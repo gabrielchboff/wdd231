@@ -242,7 +242,7 @@ a:hover {
 
 .brief-table th,
 .brief-table td {
-    border: 1px solid ebebeb;
+    border: 1px solid #ebebeb;
     padding: 0.5rem;
     text-align: left;
 }
@@ -366,13 +366,13 @@ a:hover {
 
 .site-footer .footer-title-sub {
     font-size: 0.95rem;
-    color: #ebebeb;
+    color: ##ebebeb;
     line-height: 1.1;
 }
 
 .site-footer .footer-desc {
     margin: 0.5rem 0 0 0;
-    color: ebebeb;
+    color: #ebebeb;
     font-size: 0.97rem;
 }
 
@@ -406,7 +406,7 @@ a:hover {
 }
 
 .site-footer .footer-links-list a {
-    color: ebebeb;
+    color: #ebebeb;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -442,7 +442,7 @@ a:hover {
     border-top: 1px solid #444;
     padding-top: 1rem;
     font-size: 0.95rem;
-    color: ebebeb;
+    color: #ebebeb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,7 +457,7 @@ a:hover {
 }
 
 .site-footer .footer-bottom-links a {
-    color: ebebeb;
+    color: #ebebeb;
     text-decoration: none;
     transition: color 0.2s;
 }
