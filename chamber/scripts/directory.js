@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
    
     const directory = document.getElementById("directory");
 
+    const gridBtn = document.getElementById("gridBtn");
+    const listBtn = document.getElementById("listBtn");
 
     let membersData = [];
     let currentView = "grid";

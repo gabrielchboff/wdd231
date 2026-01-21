@@ -1,7 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const gridBtn = document.getElementById("gridBtn");
-    const listBtn = document.getElementById("listBtn");
     const navToggle = document.getElementById("navToggle");
     const navLinks = document.getElementById("navLinks");
     const yearSpan = document.getElementById("year");
