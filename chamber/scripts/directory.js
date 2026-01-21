@@ -1,11 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("year").textContent =
-                    new Date().getFullYear();
+   
     const directory = document.getElementById("directory");
-    const gridBtn = document.getElementById("gridBtn");
-    const listBtn = document.getElementById("listBtn");
-    const navToggle = document.getElementById("navToggle");
-    const navLinks = document.getElementById("navLinks");
+
 
     let membersData = [];
     let currentView = "grid";
@@ -92,34 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         }).join("");
     }
-
-    gridBtn.addEventListener("click", () => {
-        gridBtn.classList.add("active");
-        gridBtn.setAttribute("aria-pressed", "true");
-        listBtn.classList.remove("active");
-        listBtn.setAttribute("aria-pressed", "false");
-        displayMembers("grid");
-    });
-
-    listBtn.addEventListener("click", () => {
-        listBtn.classList.add("active");
-        listBtn.setAttribute("aria-pressed", "true");
-        gridBtn.classList.remove("active");
-        gridBtn.setAttribute("aria-pressed", "false");
-        displayMembers("list");
-    });
-
-    navToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("open");
-        navToggle.setAttribute("aria-expanded", isOpen);
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
-            navLinks.classList.remove("open");
-            navToggle.setAttribute("aria-expanded", "false");
-        }
-    });
 
     fetchMembers();
 });
