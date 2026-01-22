@@ -424,7 +424,7 @@
 }
 
 .spotlight-content {
-    padding: 1.5rem;
+    padding: 2.5rem;
 }
 
 .spotlight-content h3 {
@@ -550,8 +550,8 @@
     .weather-section,
     .events-section,
     .spotlights-section {
-        padding: 1.5rem 1rem;
-        margin: 1.5rem auto;
+        padding: 1.8rem 1.3rem;
+        margin: 1.8rem auto;
     }
 
     .events-grid,
@@ -672,7 +672,7 @@
     }
 
     .spotlight-content h3 {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
 
     .join-banner {

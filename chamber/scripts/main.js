@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navToggle = document.getElementById("navToggle");
     const navLinks = document.getElementById("navLinks");
     const yearSpan = document.getElementById("year");
+    const gridBtn = document.getElementById("gridBtn");
 
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();

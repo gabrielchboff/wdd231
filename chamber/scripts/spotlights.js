@@ -1,6 +1,23 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const spotlightsContainer = document.getElementById("spotlights");
 
+    function getMembershipLevel(level) {
+        switch (level) {
+            case 1: return "member";
+            case 2: return "silver";
+            case 3: return "gold";
+            default: return "member";
+        }
+    }
+
+    function getMembershipLevelText(level) {
+        switch (level) {
+            case 1: return "Member";
+            case 2: return "Silver Member";
+            case 3: return "Gold Member";
+            default: return "Member";
+        }
+    }
     if (!spotlightsContainer) return;
 
     try {
@@ -41,6 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <div class="spotlight-category">${member.category}</div>
                     <p>${member.description}</p>
 
+                    <span class="member-level ${getMembershipLevel(member.membershipLevel)}">${getMembershipLevelText(member.membershipLevel)}</span>
                     <div class="spotlight-contact">
                         <p>📞 ${member.phone}</p>
                         <p>
