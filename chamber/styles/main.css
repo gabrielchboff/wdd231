@@ -1,14 +1,6 @@
 :root {
     --primary: #2a5d84;
     --secondary: #f4b942;
-    --background: #f9f9f9;
-    --contrast: #fff;
-}
-
-
-:root {
-    --primary: #2a5d84;
-    --secondary: #f4b942;
     --contrast: #fff;
     --background: #f9f9f9;
     --text: #222222;
@@ -363,13 +355,13 @@ a:hover {
 
 .site-footer .footer-title-sub {
     font-size: 0.95rem;
-    color: #e0e0e0;
+    color: #fff;
     line-height: 1.1;
 }
 
 .site-footer .footer-desc {
     margin: 0.5rem 0 0 0;
-    color: #e0e0e0;
+    color: #fff;
     font-size: 0.97rem;
 }
 
