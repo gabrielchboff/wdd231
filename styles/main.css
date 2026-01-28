@@ -3,7 +3,7 @@
     --primary: #2a5d84;
     --secondary: #f4b942;
     --background: #f9f9f9;
-    --text: #222222;
+    --text:  #222;
     --contrast: #fff;
 }
 
@@ -34,7 +34,7 @@ body {
 /* HEADER */
 header {
     background: #fff;
-    color: #222;
+    color: var(--text);
     padding: 0;
     width: 100vw;
     z-index: 100;
@@ -47,7 +47,7 @@ header {
     left: 0;
     width: 100vw;
     background: #fff;
-    color: #222;
+    color: var(--text);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +69,7 @@ header {
 .nav-logo {
     width: 40px;
     height: 40px;
-    background: #222;
+    background: var(--text);
     color: #fff;
     font-weight: bold;
     font-size: 1.3rem;
@@ -88,7 +88,7 @@ header {
 .nav-title-main {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #222;
+    color: var(--text);
     line-height: 1.1;
 }
 
@@ -118,7 +118,7 @@ header {
 }
 
 .nav-links a {
-    color: #222;
+    color: var(--text);
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 0;
@@ -137,7 +137,7 @@ header {
 }
 
 .nav-login-btn {
-    background: #222;
+    background: var(--text);
     color: #fff;
     padding: 0.5rem 1.2rem;
     border-radius: 6px;
@@ -178,7 +178,7 @@ header {
     display: block;
     width: 30px;
     height: 4px;
-    background: #222;
+    background: var(--text);
     margin: 5px 0;
     border-radius: 2px;
     transition: all 0.3s;
@@ -308,8 +308,8 @@ a:hover {
 }
 
 .sitemap-box.active {
-    color: #222;
-    border-color: #222;
+    color: var(--text);
+    border-color: var(--text);
     font-weight: bold;
     background: #f4f4f4;
 }
@@ -345,7 +345,7 @@ a:hover {
 .site-footer .footer-logo {
     width: 40px;
     height: 40px;
-    background: #222;
+    background: var(--text);
     color: #fff;
     font-weight: bold;
     font-size: 1.3rem;
@@ -591,7 +591,7 @@ a:hover {
     }
 
     #navToggle span {
-        background: #222;
+        background: var(--text);
     }
 
     .nav-logo {
