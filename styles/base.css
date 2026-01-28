@@ -183,6 +183,84 @@ h2 {
     flex-wrap: wrap;
 }
 
+/* ===============================
+   COURSE DETAILS MODAL
+   =============================== */
+
+dialog#course-details {
+  width: min(90%, 500px);
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  background-color: #ffffff;
+  color: #222;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+  /* Animation */
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* When dialog is open */
+dialog#course-details[open] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Backdrop (overlay) */
+dialog#course-details::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Close button */
+dialog#course-details button#closeModal {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+dialog#course-details button#closeModal:hover {
+  transform: scale(1.1);
+}
+
+/* Headings */
+dialog#course-details h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+dialog#course-details h3 {
+  margin-top: 0.25rem;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Text */
+dialog#course-details p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* Strong labels */
+dialog#course-details strong {
+  color: #000;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  dialog#course-details {
+    padding: 1.25rem;
+  }
+}
+
+
 .filter-btn {
     padding: 0.5rem 1.5rem;
     border: 2px solid var(--primary-color);
@@ -611,3 +689,4 @@ img {
         border: 1px solid #ddd;
     }
 }
+

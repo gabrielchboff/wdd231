@@ -1,6 +1,5 @@
 // ============================================
 // WDD 231 - Course Home Page - Main JavaScript
-// Consolidated: Navigation, Courses, and Dates
 // ============================================
 
 // ============================================
@@ -13,74 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuToggle && nav) {
     menuToggle.addEventListener("click", () => {
       const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-
-      // Toggle aria-expanded attribute
       menuToggle.setAttribute("aria-expanded", !isExpanded);
-
-      // Toggle navigation visibility
       nav.classList.toggle("open");
-
-      // Animate hamburger icon
-      const spans = menuToggle.querySelectorAll("span");
-      if (nav.classList.contains("open")) {
-        spans[0].style.transform = "rotate(45deg) translateY(10px)";
-        spans[1].style.opacity = "0";
-        spans[2].style.transform = "rotate(-45deg) translateY(-10px)";
-      } else {
-        spans[0].style.transform = "none";
-        spans[1].style.opacity = "1";
-        spans[2].style.transform = "none";
-      }
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener("click", (e) => {
-      if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
-        if (nav.classList.contains("open")) {
-          nav.classList.remove("open");
-          menuToggle.setAttribute("aria-expanded", "false");
-          const spans = menuToggle.querySelectorAll("span");
-          spans[0].style.transform = "none";
-          spans[1].style.opacity = "1";
-          spans[2].style.transform = "none";
-        }
-      }
-    });
-
-    // Close menu on window resize to larger screens
-    window.addEventListener("resize", () => {
-      if (window.innerWidth >= 768) {
-        nav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        const spans = menuToggle.querySelectorAll("span");
-        spans[0].style.transform = "none";
-        spans[1].style.opacity = "1";
-        spans[2].style.transform = "none";
-      }
-    });
-
-    // Close menu when a nav link is clicked
-    const navLinks = nav.querySelectorAll("a");
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        if (window.innerWidth < 768) {
-          nav.classList.remove("open");
-          menuToggle.setAttribute("aria-expanded", "false");
-          const spans = menuToggle.querySelectorAll("span");
-          spans[0].style.transform = "none";
-          spans[1].style.opacity = "1";
-          spans[2].style.transform = "none";
-        }
-      });
     });
   }
 });
 
 // ============================================
-// COURSES - Data, Display, and Filter
+// COURSES - Data, Display, Filter and Modal
 // ============================================
 
-// Course Array - Web and Computer Programming Certificate
+// Course Array
 const courses = [
   {
     subject: "CSE",
@@ -89,7 +31,7 @@ const courses = [
     credits: 2,
     certificate: "Web and Computer Programming",
     description:
-      "This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.",
+      "This course will introduce students to programming and problem solving.",
     technology: ["Python"],
     completed: true,
   },
@@ -100,7 +42,7 @@ const courses = [
     credits: 2,
     certificate: "Web and Computer Programming",
     description:
-      "This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands-on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.",
+      "This course introduces students to the World Wide Web and web development.",
     technology: ["HTML", "CSS"],
     completed: true,
   },
@@ -111,30 +53,8 @@ const courses = [
     credits: 2,
     certificate: "Web and Computer Programming",
     description:
-      "CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call, debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.",
+      "Students learn to write, test, and debug functions.",
     technology: ["Python"],
-    completed: true,
-  },
-  {
-    subject: "CSE",
-    number: 210,
-    title: "Programming with Classes",
-    credits: 2,
-    certificate: "Web and Computer Programming",
-    description:
-      "This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.",
-    technology: ["C#"],
-    completed: true,
-  },
-  {
-    subject: "WDD",
-    number: 131,
-    title: "Dynamic Web Fundamentals",
-    credits: 2,
-    certificate: "Web and Computer Programming",
-    description:
-      "This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.",
-    technology: ["HTML", "CSS", "JavaScript"],
     completed: true,
   },
   {
@@ -144,78 +64,109 @@ const courses = [
     credits: 2,
     certificate: "Web and Computer Programming",
     description:
-      "This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.",
+      "Focus on UX, accessibility, performance, and APIs.",
     technology: ["HTML", "CSS", "JavaScript"],
     completed: false,
   },
 ];
 
-// Display course cards
+// ============================================
+// MODAL - Display Course Details
+// ============================================
+function displayCourseDetails(course) {
+  const courseDetails = document.getElementById(`course-details${course.subject}`);
+  const currentModal = document.getElementById(`modal${course.subject}${course.number}`);
+
+  courseDetails.innerHTML = `
+    <button id="closeModal${course.number}">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+  `;
+
+  courseDetails.showModal();
+
+
+  const closeModal = document.getElementById(`closeModal${course.number}`);
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
+
+// ============================================
+// Display Course Cards
+// ============================================
 function displayCourses(filteredCourses) {
-  const courseCardsContainer = document.getElementById("course-cards");
+  const container = document.getElementById("course-cards");
+  if (!container) return;
 
-  if (!courseCardsContainer) return;
-
-  courseCardsContainer.innerHTML = "";
+  container.innerHTML = "";
 
   filteredCourses.forEach((course) => {
-    const courseCard = document.createElement("div");
-    courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
+    const card = document.createElement("div");
+    card.className = `course-card ${course.completed ? "completed" : ""}`;
 
-    courseCard.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>
-            <p>${course.title}</p>
-            <p>${course.credits} Credits</p>
-            ${course.completed ? "<p>✓ Completed</p>" : "<p>In Progress</p>"}
-        `;
+    card.innerHTML = `
+    <div id="modal${course.subject}${course.number}">
+      <h3>${course.subject} ${course.number}</h3>
+      <p>${course.title}</p>
+      <p>${course.credits} Credits</p>
+      ${course.completed ? "<p>✓ Completed</p>" : "<p>In Progress</p>"}
+      <dialog id="course-details${course.subject}"></dialog>
+    </div>
 
-    courseCardsContainer.appendChild(courseCard);
+    `;
+
+    // 🔥 CHAMADA DO MODAL AQUI
+    card.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
+
+    container.appendChild(card);
   });
 
-  // Update total credits
   updateTotalCredits(filteredCourses);
 }
 
-// Calculate and display total credits using reduce
+// ============================================
+// Total Credits
+// ============================================
 function updateTotalCredits(filteredCourses) {
-  const totalCredits = filteredCourses.reduce((total, course) => {
-    return total + course.credits;
-  }, 0);
+  const total = filteredCourses.reduce(
+    (sum, course) => sum + course.credits,
+    0
+  );
 
-  const totalCreditsElement = document.getElementById("total-credits");
-  if (totalCreditsElement) {
-    totalCreditsElement.textContent = totalCredits;
+  const totalCredits = document.getElementById("total-credits");
+  if (totalCredits) {
+    totalCredits.textContent = total;
   }
 }
 
-// Filter courses by subject
+// ============================================
+// Filter Courses
+// ============================================
 function filterCourses(subject) {
-  if (subject.toLowerCase() === "all") {
-    return courses;
-  }
+  if (subject === "all") return courses;
   return courses.filter((course) => course.subject === subject);
 }
 
-// Initialize courses
+// ============================================
+// INITIALIZATION
+// ============================================
 document.addEventListener("DOMContentLoaded", () => {
-  // Display all courses initially
   displayCourses(courses);
 
-  // Set up filter buttons
   const filterButtons = document.querySelectorAll(".filter-btn");
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Remove active class from all buttons
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-
-      // Add active class to clicked button
-      button.classList.add("active");
-
-      // Get filter value
-      const filter = button.getAttribute("data-filter");
-
-      // Filter and display courses
+      const filter = btn.dataset.filter;
       const filteredCourses = filterCourses(filter);
       displayCourses(filteredCourses);
     });
@@ -223,20 +174,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ============================================
-// DATES - Current Year and Last Modified
+// FOOTER DATES
 // ============================================
 document.addEventListener("DOMContentLoaded", () => {
-  // Set current year in footer
-  const currentYearElement = document.getElementById("currentyear");
-  if (currentYearElement) {
-    const currentYear = new Date().getFullYear();
-    currentYearElement.textContent = currentYear;
-  }
+  const year = document.getElementById("currentyear");
+  if (year) year.textContent = new Date().getFullYear();
 
-  // Set last modified date
-  const lastModifiedElement = document.getElementById("lastModified");
-  if (lastModifiedElement) {
-    const lastModified = document.lastModified;
-    lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
-  }
+  const modified = document.getElementById("lastModified");
+  if (modified)
+    modified.textContent = `Last Modified: ${document.lastModified}`;
 });

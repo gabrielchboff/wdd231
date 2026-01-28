@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Thank You | Porto Alegre Business Chamber</title>
+
+    <meta
+        name="description"
+        content="Thank you for your membership application to the Porto Alegre Business Chamber."
+    />
+    <meta name="author" content="Gabriel Boff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+      <div class="nav-left">
+          <div class="nav-logo">PA</div>
+          <div class="nav-titles">
+              <span class="nav-title-main">Porto Alegre</span>
+              <span class="nav-title-sub">Business Chamber</span>
+          </div>
+      </div>
+      <button
+          id="navToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+      >
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <ul id="navLinks" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="#">About</a></li>
+          <li class="nav-login-li">
+              <a href="#" class="nav-login-btn">Member Login</a>
+          </li>
+      </ul>
+      <a href="#" class="nav-login-btn">Member Login</a>
+  </nav>
+</header>
+
+<main class="thankyou-main">
+    <div class="thankyou-container">
+        <div class="success-icon">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="40" fill="#4caf50"/>
+                <path d="M25 40L35 50L55 30" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <h1>Thank You for Applying!</h1>
+        <p class="thankyou-intro">We've received your membership application and appreciate your interest in joining the Porto Alegre Business Chamber.</p>
+
+        <div class="application-summary">
+            <h2>Application Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <span class="summary-label">Name:</span>
+                    <span class="summary-value" id="displayName">Loading...</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Email:</span>
+                    <span class="summary-value" id="displayEmail">Loading...</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Mobile:</span>
+                    <span class="summary-value" id="displayMobile">Loading...</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Business:</span>
+                    <span class="summary-value" id="displayBusiness">Loading...</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Submitted:</span>
+                    <span class="summary-value" id="displayTimestamp">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="next-steps">
+            <h2>What Happens Next?</h2>
+            <ol class="steps-list">
+                <li>
+                    <strong>Review</strong>
+                    <p>Our membership team will review your application within 2-3 business days.</p>
+                </li>
+                <li>
+                    <strong>Confirmation</strong>
+                    <p>You'll receive an email confirmation with membership details and payment instructions.</p>
+                </li>
+                <li>
+                    <strong>Welcome</strong>
+                    <p>Once approved, you'll get access to all member benefits and resources.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="thankyou-actions">
+            <a href="index.html" class="btn-primary">Return to Home</a>
+            <a href="directory.html" class="btn-secondary">Browse Members</a>
+        </div>
+
+        <div class="contact-info">
+            <p>Questions about your application?</p>
+            <p>Contact us at <a href="mailto:membership@pachamber.com">membership@pachamber.com</a> or call <a href="tel:+555133331234">(51) 3333-1234</a></p>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <div class="footer-logo">PA</div>
+            <div class="footer-titles">
+                <span class="footer-title-main">Porto Alegre</span>
+                <span class="footer-title-sub">Business Chamber</span>
+            </div>
+        </div>
+
+        <div class="footer-desc">
+            Building a stronger business community since 2026
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-links-title">Quick Links</div>
+            <ul class="footer-links-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <div class="footer-contact-title">Contact</div>
+            <ul class="footer-contact-list">
+                <li>📍 Rua dos Andradas, 1234</li>
+                <li>📞 (51) 3333-1234</li>
+                <li>✉️ info@pachamber.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div>
+            &copy; <span id="year"></span> Porto Alegre Business Chamber
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
