@@ -2,8 +2,16 @@
     --primary: #2a5d84;
     --secondary: #f4b942;
     --background: #f9f9f9;
-    --text: #222222;
     --contrast: #fff;
+}
+
+
+:root {
+    --primary: #2a5d84;
+    --secondary: #f4b942;
+    --contrast: #fff;
+    --background: #f9f9f9;
+    --text: #222222;
 }
 
 html {

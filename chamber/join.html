@@ -11,23 +11,37 @@
         content="Join the Porto Alegre Business Chamber and connect with a thriving business community."
     />
     <meta name="author" content="Gabriel Boff" />
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/join.css" />
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <!-- Preload critical CSS files -->
+    <link rel="preload" href="styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/join.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/join.css" />
+    </noscript>
+    
+    <!-- Load normalize asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    </noscript>
+    
+    <!-- Load fonts with display swap and defer loading -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </noscript>
 
     <link rel="icon" href="favicon.ico" />
 
     <script src="scripts/main.js" defer></script>
     <script src="scripts/join.js" defer></script>
+
+
 </head>
 <body>
 <header>
@@ -379,6 +393,18 @@
         </div>
     </div>
 </footer>
+<meta property="og:title" content="Facebook" />
+<meta
+    property="og:description"
+    content="Facebook helps you connect and share with the people who are part of your life."
+/>
+<meta
+    property="og:image"
+    content="images/facebook.webp"
+/>
+<meta property="og:url" content="https://www.facebook.com/" />
+
+
 
 </body>
 </html>
