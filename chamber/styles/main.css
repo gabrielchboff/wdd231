@@ -90,7 +90,7 @@ header {
 
 .nav-title-sub {
     font-size: 0.95rem;
-    color: #666;
+    color: var(--text);
     line-height: 1.1;
 }
 
@@ -300,7 +300,7 @@ a:hover {
 }
 
 .sitemap-box.inactive {
-    color: #666;
+    color: var(--text);
     border-color: #bbb;
     background: #fafafa;
 }
