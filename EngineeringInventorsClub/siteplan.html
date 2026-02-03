@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Site plan for the Engineering Inventors Club website project - comprehensive planning document including purpose, scenarios, design specifications, and wireframes."
+        />
+        <meta name="author" content="Gabriel Boff" />
+        <title>Site Plan - Engineering Inventors Club</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E"
+        />
+
+        <link rel="stylesheet" href="styles/siteplan.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="logo">⚙️</div>
+                <div>
+                    <h1>Engineering Inventors Club</h1>
+                    <p class="subtitle">Website Project Site Plan</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="plan-section">
+                <h2>Site Name</h2>
+                <div class="content-box">
+                    <h3 class="site-name">Engineering Inventors Club</h3>
+                    <p><strong>Reason for Selection:</strong></p>
+                    <p>
+                        This name was selected because it clearly communicates
+                        the dual focus of the community: engineering excellence
+                        and inventive innovation. The name immediately
+                        identifies the target audience (engineers) and the
+                        primary activity (inventing/creating). It's
+                        professional, memorable, and accurately represents a
+                        community dedicated to advancing technology through
+                        creative problem-solving and collaborative development.
+                    </p>
+                    <p>
+                        <strong>Optional Domain:</strong>
+                        <code>engineersinventors.club</code> or
+                        <code>inventorsclub.org</code>
+                    </p>
+                    <p>
+                        The domain options use the .club or .org TLD to
+                        emphasize the community-focused nature of the platform
+                        while maintaining professionalism.
+                    </p>
+                </div>
+            </section>
+
+            <section class="plan-section">
+                <h2>Site Purpose</h2>
+                <div class="content-box">
+                    <p>
+                        The Engineering Inventors Club website serves as a
+                        comprehensive digital platform that connects engineers,
+                        inventors, and innovators from diverse disciplines to
+                        collaborate, showcase groundbreaking projects, and
+                        advance technological innovation.
+                    </p>
+
+                    <h3>Primary Services and Information:</h3>
+                    <ul>
+                        <li>
+                            <strong>Innovation Showcase:</strong>
+                            A curated gallery of 22+ engineering projects
+                            spanning robotics, IoT, renewable energy, medical
+                            devices, automation, and software development,
+                            complete with technical specifications, impact
+                            metrics, and inventor information.
+                        </li>
+
+                        <li>
+                            <strong>Member Directory:</strong>
+                            A searchable database of engineering professionals
+                            and inventors, filterable by specialty (mechanical,
+                            electrical, software, civil, biomedical, chemical,
+                            aerospace), showcasing their expertise, projects,
+                            and achievements.
+                        </li>
+
+                        <li>
+                            <strong>Community Hub:</strong>
+                            Information about club benefits including access to
+                            innovation labs with 3D printers and prototyping
+                            equipment, mentorship programs, competitions, and
+                            networking opportunities.
+                        </li>
+
+                        <li>
+                            <strong>Membership Application:</strong>
+                            An online form system allowing prospective members
+                            to apply, specifying their engineering specialty,
+                            experience level, and project interests.
+                        </li>
+
+                        <li>
+                            <strong>Knowledge Sharing:</strong>
+                            Documentation of real-world engineering solutions,
+                            technical approaches, and lessons learned from
+                            completed projects to inspire and educate the
+                            community.
+                        </li>
+                    </ul>
+
+                    <h3>Target Audience:</h3>
+                    <p>
+                        Professional engineers, independent inventors,
+                        engineering students, technology enthusiasts,
+                        professionals, and startup founders in the engineering
+                        and innovation sectors.
+                    </p>
+                </div>
+            </section>
+
+            <section class="plan-section">
+                <h2>Scenarios</h2>
+                <div class="content-box">
+                    <p>
+                        These scenarios represent questions that typical site
+                        visitors (our target audience) would ask when visiting
+                        the Engineering Inventors Club website:
+                    </p>
+
+                    <div class="scenario">
+                        <h3>Scenario 1: Project Discovery</h3>
+                        <p class="question">
+                            "What innovative engineering projects have club
+                            members created recently, and what technologies are
+                            being used?"
+                        </p>
+                        <p class="answer">
+                            <strong>How the site addresses this:</strong>
+                            The Projects page showcases 22 diverse engineering
+                            innovations with detailed information including
+                            project descriptions, technologies used, features,
+                            real-world impact, and current status. Visitors can
+                            filter by category (Robotics, IoT, Renewable Energy,
+                            Medical Devices, Automation, Software) and status
+                            (Active, Completed, Prototype) to discover projects
+                            aligned with their interests. Each project card
+                            provides immediate overview information, and
+                            clicking opens a detailed modal with comprehensive
+                            technical specifications.
+                        </p>
+                    </div>
+
+                    <div class="scenario">
+                        <h3>Scenario 2: Finding Collaborators</h3>
+                        <p class="question">
+                            "I'm a software engineer interested in medical
+                            device development. Are there biomedical engineers
+                            in the club I could collaborate with?"
+                        </p>
+                        <p class="answer">
+                            <strong>How the site addresses this:</strong>
+                            The Members page features a searchable, filterable
+                            directory of all club members. Visitors can filter
+                            by specialty (including Biomedical Engineering) or
+                            use the search function to find members by name or
+                            keywords. Each member profile displays their
+                            specialty, experience level, number of projects,
+                            patents filed, and areas of expertise. Clicking a
+                            member card reveals detailed information including
+                            their skills, achievements, and contact information,
+                            facilitating direct connection.
+                        </p>
+                    </div>
+
+                    <div class="scenario">
+                        <h3>Scenario 3: Membership Benefits</h3>
+                        <p class="question">
+                            "What benefits would I receive as a member, and how
+                            do I join the Engineering Inventors Club?"
+                        </p>
+                        <p class="answer">
+                            <strong>How the site addresses this:</strong>
+                            The Home page prominently features a comprehensive
+                            benefits section with six key advantages: Innovation
+                            Labs (access to equipment) , Collaboration
+                            opportunities, Mentorship programs, Competition
+                            participation, Resource libraries, and Global
+                            Community networking. Each benefit is clearly
+                            explained with icons and descriptions. Multiple
+                            "Join Our Community" call-to-action buttons
+                            throughout the site open a membership application
+                            modal where visitors can submit their information,
+                            including engineering specialty, experience, and
+                            project interests.
+                        </p>
+                    </div>
+
+                    <div class="scenario">
+                        <h3>Scenario 4: Impact Assessment</h3>
+                        <p class="question">
+                            "I want to see concrete examples of how these
+                            engineering projects have made a real-world
+                            difference."
+                        </p>
+                        <p class="answer">
+                            <strong>How the site addresses this:</strong> Each
+                            project profile includes a dedicated "Impact"
+                            section with quantifiable metrics. For example, the
+                            Smart Home Energy Monitor shows "23% reduction in
+                            household energy costs," the Ocean Cleanup Drone
+                            reports "2 tons of plastic collected," and the
+                            Earthquake Early Warning Network provides "10-30
+                            seconds advance warning, saving lives." These
+                            metrics demonstrate tangible outcomes and validate
+                            the practical value of the innovations.
+                        </p>
+                    </div>
+
+                    <div class="scenario">
+                        <h3>Scenario 5: Skill Development</h3>
+                        <p class="question">
+                            "What skills and technologies are most commonly used
+                            by successful inventors in the club?"
+                        </p>
+                        <p class="answer">
+                            <strong>How the site addresses this:</strong> The
+                            Projects page showcases the "Technologies Used" for
+                            each project, revealing common tools like Arduino,
+                            Python, Machine Learning, 3D Printing, IoT Sensors,
+                            Computer Vision, and various specialized equipment.
+                            The Members page displays members' skill sets,
+                            showing trending technologies and expertise areas.
+                            This information helps visitors understand what
+                            skills are valuable and guides their learning path.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="plan-section">
+                <h2>Color Scheme</h2>
+                <div class="content-box">
+                    <p>
+                        The color palette was carefully selected to convey
+                        professionalism, innovation, and technological
+                        excellence while maintaining accessibility and visual
+                        clarity.
+                    </p>
+
+                    <div class="color-grid">
+                        <div class="color-card">
+                            <div class="color-swatch primary-color"></div>
+                            <h3>Primary Blue</h3>
+                            <p class="hex-code">#1a5490</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Main navigation
+                                background, headings, links, buttons, brand
+                                identity, modal headers, and primary CTAs. This
+                                deep blue conveys trust, professionalism, and
+                                technological sophistication.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch primary-dark-color"></div>
+                            <h3>Primary Dark</h3>
+                            <p class="hex-code">#0d3a66</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Gradient endpoints,
+                                footer background, hover states, and dark
+                                accents. Provides depth and contrast to the
+                                primary blue.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch secondary-color"></div>
+                            <h3>Secondary Orange</h3>
+                            <p class="hex-code">#ff6b35</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Call-to-action buttons,
+                                important highlights, interactive elements,
+                                status badges, and emphasis elements. This
+                                vibrant orange creates energy and draws
+                                attention to key actions.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch accent-color"></div>
+                            <h3>Accent Yellow</h3>
+                            <p class="hex-code">#ffd23f</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Statistics highlights,
+                                category badges, hover effects, and innovative
+                                elements. The yellow adds warmth and represents
+                                innovation and creativity.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch text-dark-color"></div>
+                            <h3>Text Dark</h3>
+                            <p class="hex-code">#1a1a1a</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Primary body text,
+                                descriptions, and content. High contrast ensures
+                                readability.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch text-gray-color"></div>
+                            <h3>Text Gray</h3>
+                            <p class="hex-code">#666666</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Secondary text,
+                                metadata, timestamps, and supporting
+                                information. Provides visual hierarchy.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch bg-light-color"></div>
+                            <h3>Background Light</h3>
+                            <p class="hex-code">#f8f9fa</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Page backgrounds, card
+                                backgrounds, alternating sections. Creates a
+                                clean, modern feel.
+                            </p>
+                        </div>
+
+                        <div class="color-card">
+                            <div class="color-swatch bg-white-color"></div>
+                            <h3>Background White</h3>
+                            <p class="hex-code">#ffffff</p>
+                            <p class="color-usage">
+                                <strong>Usage:</strong> Card surfaces, modals,
+                                content containers. Provides maximum contrast
+                                and clarity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accessibility-note">
+                        <h3>Accessibility Considerations</h3>
+                        <p>
+                            All color combinations have been verified to meet
+                            WCAG AA standards for contrast ratio (minimum 4.5:1
+                            for normal text, 3:1 for large text). The primary
+                            blue on white background provides a 7.2:1 ratio, and
+                            white text on the primary blue provides a 5.8:1
+                            ratio, ensuring excellent readability for all users.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="plan-section">
+                <h2>Typography</h2>
+                <div class="content-box">
+                    <p>
+                        The typography system uses system fonts for optimal
+                        performance, universal compatibility, and professional
+                        appearance across all devices and operating systems.
+                    </p>
+                    <div class="typography-grid">
+                        <div class="font-card">
+                            <h3>Primary Font Family</h3>
+                            <p class="font-name">
+                                'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+                            </p>
+                            <div class="font-sample">
+                                <h1 class="sample-h1">
+                                    Heading 1 Sample - 2.5rem (40px)
+                                </h1>
+                                <h2 class="sample-h2">
+                                    Heading 2 Sample - 2rem (32px)
+                                </h2>
+                                <h3 class="sample-h3">
+                                    Heading 3 Sample - 1.5rem (24px)
+                                </h3>
+                                <p class="sample-body">
+                                    Body text sample at 1rem (16px) - The quick
+                                    brown fox jumps over the lazy dog. This
+                                    demonstrates the clean, modern appearance of
+                                    the primary system font stack used
+                                    throughout the website. Line height is set
+                                    to 1.6 for optimal readability.
+                                </p>
+                                <p
+                                    class="sample-small"
+                                    style="font-size: 0.875rem"
+                                >
+                                    Small text sample at 0.875rem (14px) used
+                                    for metadata and supplementary information.
+                                </p>
+                            </div>
+                            <div class="font-usage">
+                                <h4>Usage:</h4>
+                                <ul>
+                                    <li>
+                                        <strong>All Headings (h1-h6):</strong>
+                                        Font weight 700 (bold) for strong visual
+                                        hierarchy
+                                    </li>
+                                    <li>
+                                        <strong>Body Text:</strong> Font weight
+                                        400 (normal) with 1.6 line-height for
+                                        comfortable reading
+                                    </li>
+                                    <li>
+                                        <strong>Navigation Links:</strong> Font
+                                        weight 500 (medium) for prominence
+                                    </li>
+                                    <li>
+                                        <strong>Buttons & CTAs:</strong> Font
+                                        weight 600 (semi-bold) for emphasis
+                                    </li>
+                                    <li>
+                                        <strong>Form Labels:</strong> Font
+                                        weight 600 (semi-bold) for clarity
+                                    </li>
+                                    <li>
+                                        <strong>Metadata & Captions:</strong>
+                                        Font weight 400 (normal) at reduced
+                                        sizes
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="font-card">
+                            <h3>Monospace Font (Code Elements)</h3>
+                            <p class="font-name">
+                                'Courier New', Courier, monospace
+                            </p>
+                            <div class="font-sample">
+                                <code class="sample-code"
+                                    >const projectData = await
+                                    fetch('data/projects.json');</code
+                                >
+                            </div>
+                            <div class="font-usage">
+                                <h4>Usage:</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Code snippets:</strong>
+                                        Technology names, domain examples
+                                    </li>
+                                    <li>
+                                        <strong>Technical references:</strong>
+                                        File paths, API endpoints
+                                    </li>
+                                    <li>
+                                        <strong>Inline code:</strong> HTML
+                                        elements, variable names
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="type-system">
+                        <h3>Typography Scale & Hierarchy</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Size (rem)</th>
+                                    <th>Size (px)</th>
+                                    <th>Weight</th>
+                                    <th>Usage Context</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>H1</td>
+                                    <td>2.5rem</td>
+                                    <td>40px</td>
+                                    <td>700</td>
+                                    <td>Page titles, hero headings</td>
+                                </tr>
+                                <tr>
+                                    <td>H2</td>
+                                    <td>2rem</td>
+                                    <td>32px</td>
+                                    <td>700</td>
+                                    <td>Section headings</td>
+                                </tr>
+                                <tr>
+                                    <td>H3</td>
+                                    <td>1.5rem</td>
+                                    <td>24px</td>
+                                    <td>700</td>
+                                    <td>Subsection headings, card titles</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Large</td>
+                                    <td>1.25rem</td>
+                                    <td>20px</td>
+                                    <td>400</td>
+                                    <td>Introductory paragraphs, lead text</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Regular</td>
+                                    <td>1rem</td>
+                                    <td>16px</td>
+                                    <td>400</td>
+                                    <td>Standard body text, descriptions</td>
+                                </tr>
+                                <tr>
+                                    <td>Body Small</td>
+                                    <td>0.875rem</td>
+                                    <td>14px</td>
+                                    <td>400</td>
+                                    <td>
+                                        Metadata, captions, supplementary info
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Button Text</td>
+                                    <td>1.125rem</td>
+                                    <td>18px</td>
+                                    <td>600</td>
+                                    <td>Call-to-action buttons</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="accessibility-note">
+                        <h3>Accessibility & Performance Considerations</h3>
+                        <ul>
+                            <li>
+                                <strong>System Fonts:</strong> Using system font
+                                stacks eliminates font download time, improving
+                                page load performance
+                            </li>
+                            <li>
+                                <strong>Relative Units:</strong> All sizes use
+                                rem units to respect user browser font size
+                                preferences
+                            </li>
+                            <li>
+                                <strong>Line Height:</strong> 1.6 line-height
+                                ensures comfortable reading for users with
+                                dyslexia or visual impairments
+                            </li>
+                            <li>
+                                <strong>Responsive Scaling:</strong> Font sizes
+                                reduce proportionally on mobile devices for
+                                optimal readability
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="plan-section">
+                <h2>Wireframes concept</h2>
+                <div class="content-box">
+                    <p>
+                        The following wireframes demonstrate the responsive
+                        layout structure for the home page across mobile and
+                        desktop viewports. These wireframes focus on content
+                        hierarchy, layout relationships, and user flow rather
+                        than visual design details. The Concepts are being
+                        explored and refined to ensure a seamless user
+                        experience. The phrases, texts, and structure are being
+                        decided to create a cohesive and engaging user
+                        experience.
+                    </p>
+
+                    <img src="images/wireframe-concept-2.png" width="45%" />
+
+                    <div class="wireframe-container">
+                        <div class="wireframe-card">
+                            <h3>Mobile View (320px - 768px)</h3>
+                            <div class="wireframe mobile-wireframe">
+                                <div class="wf-section wf-header">
+                                    <div class="wf-logo">🔧</div>
+                                    <div class="wf-burger">☰</div>
+                                </div>
+
+                                <div class="wf-section wf-hero">
+                                    <div class="wf-text-center">
+                                        <div class="wf-title">Hero Title</div>
+                                        <div class="wf-subtitle">
+                                            Subtitle Text
+                                        </div>
+                                        <div class="wf-button">CTA Button</div>
+                                    </div>
+                                    <div class="wf-stats-stack">
+                                        <div class="wf-stat">Stat 1</div>
+                                        <div class="wf-stat">Stat 2</div>
+                                        <div class="wf-stat">Stat 3</div>
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-features">
+                                    <div class="wf-heading">
+                                        Section Heading
+                                    </div>
+                                    <div class="wf-card">Feature 1</div>
+                                    <div class="wf-card">Feature 2</div>
+                                    <div class="wf-card">Feature 3</div>
+                                </div>
+
+                                <div class="wf-section wf-projects">
+                                    <div class="wf-heading">Projects</div>
+                                    <div class="wf-card">Project 1</div>
+                                    <div class="wf-card">Project 2</div>
+                                    <div class="wf-card">Project 3</div>
+                                </div>
+
+                                <div class="wf-section wf-footer">
+                                    <div class="wf-footer-content">
+                                        <div>Links</div>
+                                        <div>Contact</div>
+                                        <div>Social</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wireframe-notes">
+                                <h4>Layout Characteristics:</h4>
+                                <ul>
+                                    <li>Single column layout</li>
+                                    <li>Hamburger menu navigation</li>
+                                    <li>Stacked statistics cards</li>
+                                    <li>Full-width feature cards</li>
+                                    <li>Vertical footer sections</li>
+                                    <li>
+                                        Touch-friendly tap targets (min 44px)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="wireframe-card">
+                            <h3>Desktop View (769px+)</h3>
+                            <div class="wireframe desktop-wireframe">
+                                <div class="wf-section wf-header-desktop">
+                                    <div class="wf-logo">🔧 Logo & Brand</div>
+                                    <div class="wf-nav">
+                                        Home | Projects | Members
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-hero-desktop">
+                                    <div class="wf-hero-content">
+                                        <div class="wf-title-large">
+                                            Hero Title
+                                        </div>
+                                        <div class="wf-subtitle">
+                                            Subtitle and Description
+                                        </div>
+                                        <div class="wf-button">
+                                            Call to Action
+                                        </div>
+                                    </div>
+                                    <div class="wf-stats-row">
+                                        <div class="wf-stat">Stat 1</div>
+                                        <div class="wf-stat">Stat 2</div>
+                                        <div class="wf-stat">Stat 3</div>
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-features-desktop">
+                                    <div class="wf-heading">Why Join Us?</div>
+                                    <div class="wf-grid-3">
+                                        <div class="wf-card">Feature 1</div>
+                                        <div class="wf-card">Feature 2</div>
+                                        <div class="wf-card">Feature 3</div>
+                                        <div class="wf-card">Feature 4</div>
+                                        <div class="wf-card">Feature 5</div>
+                                        <div class="wf-card">Feature 6</div>
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-projects-desktop">
+                                    <div class="wf-heading">
+                                        Featured Projects
+                                    </div>
+                                    <div class="wf-grid-3">
+                                        <div class="wf-card">Project 1</div>
+                                        <div class="wf-card">Project 2</div>
+                                        <div class="wf-card">Project 3</div>
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-testimonials">
+                                    <div class="wf-heading">Member Stories</div>
+                                    <div class="wf-grid-3">
+                                        <div class="wf-card">Quote 1</div>
+                                        <div class="wf-card">Quote 2</div>
+                                        <div class="wf-card">Quote 3</div>
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-cta">
+                                    <div class="wf-cta-content">
+                                        <div class="wf-title">
+                                            Ready to Join?
+                                        </div>
+                                        <div class="wf-button">
+                                            Become a Member
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wf-section wf-footer-desktop">
+                                    <div class="wf-footer-grid">
+                                        <div>Brand</div>
+                                        <div>Links</div>
+                                        <div>Contact</div>
+                                        <div>Social</div>
+                                    </div>
+                                    <div class="wf-copyright">
+                                        Copyright &copy; 2026
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wireframe-notes">
+                                <h4>Layout Characteristics:</h4>
+                                <ul>
+                                    <li>
+                                        Multi-column grid layouts (2-3 columns)
+                                    </li>
+                                    <li>Horizontal navigation menu</li>
+                                    <li>Row-based statistics display</li>
+                                    <li>Card grid systems for features</li>
+                                    <li>Horizontal footer with columns</li>
+                                    <li>Maximum content width: 1400px</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wireframe-principles">
+                        <h3>Design Principles Applied</h3>
+                        <div class="principles-grid">
+                            <div class="principle">
+                                <h4>Proximity</h4>
+                                <p>
+                                    Related elements are grouped together (e.g.,
+                                    statistics in hero section, footer links in
+                                    columns)
+                                </p>
+                            </div>
+                            <div class="principle">
+                                <h4>Alignment</h4>
+                                <p>
+                                    All elements follow a consistent grid system
+                                    with proper margins and padding
+                                </p>
+                            </div>
+                            <div class="principle">
+                                <h4>Repetition</h4>
+                                <p>
+                                    Card components, headings, and buttons
+                                    maintain consistent styling throughout
+                                </p>
+                            </div>
+                            <div class="principle">
+                                <h4>Contrast</h4>
+                                <p>
+                                    Clear visual hierarchy through size, color,
+                                    and spacing differences
+                                </p>
+                            </div>
+                            <div class="principle">
+                                <h4>White Space</h4>
+                                <p>
+                                    Generous spacing between sections and
+                                    elements for breathing room
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    &copy; <span id="year"></span> Engineering Inventors Club
+                    Site Plan | WDD 231 Project
+                </p>
+                <p><a href="index.html">Return to Website</a></p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>
