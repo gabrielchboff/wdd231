@@ -13,7 +13,7 @@
 :root {
     --primary-color: #1a5490;
     --primary-dark: #0d3a66;
-    --secondary-color: #ff6b35;
+    --secondary-color: #ff4400;
     --accent-color: #ffd23f;
     --text-dark: #1a1a1a;
     --text-gray: #666666;
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -40,7 +40,11 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--primary-color) 0%,
+        var(--primary-dark) 100%
+    );
     color: var(--bg-white);
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -64,6 +68,7 @@ header {
     justify-content: center;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: var(--primary-dark);
 }
 
 header h1 {
@@ -158,7 +163,7 @@ main {
 }
 
 code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     background: var(--bg-light);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
@@ -250,7 +255,7 @@ code {
 }
 
 .hex-code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--primary-dark);
@@ -276,7 +281,7 @@ code {
 }
 
 .font-name {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 1.125rem;
     color: var(--primary-dark);
     margin-bottom: 1.5rem;
@@ -321,7 +326,7 @@ code {
 }
 
 .sample-code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     background: var(--text-dark);
     color: var(--accent-color);
     padding: 1rem;
