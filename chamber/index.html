@@ -1,214 +1,233 @@
 <!doctype html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Home | Porto Alegre Business Chamber</title>
+        <title>Home | Porto Alegre Business Chamber</title>
 
-    <meta
-        name="description"
-        content="The Porto Alegre Business Chamber supports local businesses through networking, advocacy, and economic development."
-    />
-    <meta name="author" content="Gabriel Boff" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <meta
+            name="description"
+            content="The Porto Alegre Business Chamber supports local businesses through networking, advocacy, and economic development."
+        />
+        <meta name="author" content="Gabriel Boff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
 
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/home.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/home.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+        <link rel="icon" href="favicon.ico" />
 
-    <link rel="icon" href="favicon.ico" />
-
-    <link rel="stylesheet" href="styles/directory.css" />
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-</head>
-<body>
-<header>
-    <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
-      <div class="nav-left">
-          <div class="nav-logo">PA</div>
-          <div class="nav-titles">
-              <span class="nav-title-main">Porto Alegre</span>
-              <span class="nav-title-sub">Business Chamber</span>
-          </div>
-      </div>
-      <button
-          id="navToggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          aria-controls="navLinks"
-      >
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-      <ul id="navLinks" class="nav-links">
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="#">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="#">About</a></li>
-          <li class="nav-login-li">
-              <a href="#" class="nav-login-btn">Member Login</a>
-          </li>
-      </ul>
-      <a href="#" class="nav-login-btn">Member Login</a>
-  </nav>
-</header>
-
-<main class="home-main">
-
-    <!-- HERO SECTION -->
-
-    <section class="hero-section" aria-label="Porto Alegre business community hero image">
-        <div class="hero-content">
-            <h1>Supporting Business. Strengthening Community.</h1>
-            <p>
-                The Porto Alegre Business Chamber connects local businesses,
-                promotes economic growth, and advocates for a thriving community.
-            </p>
-            <div class="hero-cta">
-                <a href="#" class="btn btn-primary">Join the Chamber</a>
-                <a href="directory.html" class="btn btn-secondary">View Members</a>
-            </div>
-        </div>
-
-
-    </section>
-
-    <!-- WEATHER SECTION -->
-    
-    <section class="weather weather-section" id="weather">
-        <h2>Weather</h2>
-        <div id="weatherWidget" class="weather-widget"></div>
-    </section>
-
-
-    <!-- EVENTS SECTION -->
-    <section class="events-section">
-        <h2>Upcoming Events</h2>
-
-        <div class="events-grid">
-            <article class="event-card">
-                <div class="event-date">
-                    <span class="event-day">22</span>
-                    <span class="event-month">APR</span>
+        <link rel="stylesheet" href="styles/directory.css" />
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/spotlights.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+                <div class="nav-left">
+                    <div class="nav-logo">PA</div>
+                    <div class="nav-titles">
+                        <span class="nav-title-main">Porto Alegre</span>
+                        <span class="nav-title-sub">Business Chamber</span>
+                    </div>
                 </div>
-                <div class="event-info">
-                    <h3>Business Networking Breakfast</h3>
-                    <p class="event-time">8:00 AM – 10:00 AM</p>
-                    <p class="event-location">Downtown Convention Center</p>
+                <button
+                    id="navToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navLinks" class="nav-links">
+                    <li>
+                        <a href="index.html" class="active" aria-current="page"
+                            >Home</a
+                        >
+                    </li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="nav-login-li">
+                        <a href="#" class="nav-login-btn">Member Login</a>
+                    </li>
+                </ul>
+                <a href="#" class="nav-login-btn">Member Login</a>
+            </nav>
+        </header>
+
+        <main class="home-main">
+            <!-- HERO SECTION -->
+
+            <section
+                class="hero-section"
+                aria-label="Porto Alegre business community hero image"
+            >
+                <div class="hero-content">
+                    <h1>Supporting Business. Strengthening Community.</h1>
                     <p>
-                        Connect with local entrepreneurs and professionals
-                        over coffee and conversation.
+                        The Porto Alegre Business Chamber connects local
+                        businesses, promotes economic growth, and advocates for
+                        a thriving community.
                     </p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-primary">Join the Chamber</a>
+                        <a href="directory.html" class="btn btn-secondary"
+                            >View Members</a
+                        >
+                    </div>
                 </div>
-            </article>
+            </section>
 
-            <article class="event-card">
-                <div class="event-date">
-                    <span class="event-day">05</span>
-                    <span class="event-month">MAY</span>
+            <!-- WEATHER SECTION -->
+
+            <section class="weather weather-section" id="weather">
+                <h2>Weather</h2>
+                <div id="weatherWidget" class="weather-widget"></div>
+            </section>
+
+            <!-- EVENTS SECTION -->
+            <section class="events-section">
+                <h2>Upcoming Events</h2>
+
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">22</span>
+                            <span class="event-month">APR</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Business Networking Breakfast</h3>
+                            <p class="event-time">8:00 AM – 10:00 AM</p>
+                            <p class="event-location">
+                                Downtown Convention Center
+                            </p>
+                            <p>
+                                Connect with local entrepreneurs and
+                                professionals over coffee and conversation.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">05</span>
+                            <span class="event-month">MAY</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Small Business Workshop</h3>
+                            <p class="event-time">2:00 PM – 5:00 PM</p>
+                            <p class="event-location">Chamber Headquarters</p>
+                            <p>
+                                Learn strategies for growth, marketing, and
+                                financial planning.
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <div class="event-info">
-                    <h3>Small Business Workshop</h3>
-                    <p class="event-time">2:00 PM – 5:00 PM</p>
-                    <p class="event-location">Chamber Headquarters</p>
+            </section>
+
+            <!-- BUSINESS SPOTLIGHTS -->
+
+            <section class="spotlights-section">
+                <h2>Member Spotlights</h2>
+                <div id="spotlights" class="spotlights-grid">
+                    <p>Loading member spotlights...</p>
+                </div>
+            </section>
+
+            <!-- JOIN CTA -->
+            <section class="join-banner">
+                <div class="join-banner-content">
+                    <h2>Become a Chamber Member</h2>
                     <p>
-                        Learn strategies for growth, marketing,
-                        and financial planning.
+                        Join a network of professionals committed to
+                        strengthening Porto Alegre’s business community.
                     </p>
+                    <a href="#" class="btn btn-banner"
+                        >Join the Chamber Today</a
+                    >
                 </div>
-            </article>
-        </div>
-    </section>
+            </section>
+        </main>
 
-    <!-- BUSINESS SPOTLIGHTS -->
-    
-    <section class="spotlights-section">
-        <h2>Member Spotlights</h2>
-        <div id="spotlights" class="spotlights-grid">
-            <p>Loading member spotlights...</p>
-        </div>
-    </section>
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">PA</div>
+                    <div class="footer-titles">
+                        <span class="footer-title-main">Porto Alegre</span>
+                        <span class="footer-title-sub">Business Chamber</span>
+                    </div>
+                </div>
 
-    <!-- JOIN CTA -->
-    <section class="join-banner">
-        <div class="join-banner-content">
-            <h2>Become a Chamber Member</h2>
-            <p>
-                Join a network of professionals committed to
-                strengthening Porto Alegre’s business community.
-            </p>
-            <a href="#" class="btn btn-banner">Join the Chamber Today</a>
-        </div>
-    </section>
+                <div class="footer-desc">
+                    Building a stronger business community since 2026
+                </div>
 
-</main>
+                <div class="footer-links">
+                    <div class="footer-links-title">Quick Links</div>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
 
-<footer class="site-footer">
-    <div class="footer-top">
-        <div class="footer-brand">
-            <div class="footer-logo">PA</div>
-            <div class="footer-titles">
-                <span class="footer-title-main">Porto Alegre</span>
-                <span class="footer-title-sub">Business Chamber</span>
+                <div class="footer-contact">
+                    <div class="footer-contact-title">Contact</div>
+                    <ul class="footer-contact-list">
+                        <li>📍 Rua dos Andradas, 1234</li>
+                        <li>📞 (51) 3333-1234</li>
+                        <li>✉️ info@pachamber.com</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="footer-desc">
-            Building a stronger business community since 2026
-        </div>
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="year"></span> Porto Alegre Business Chamber
+                </div>
+            </div>
+        </footer>
 
-        <div class="footer-links">
-            <div class="footer-links-title">Quick Links</div>
-            <ul class="footer-links-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <div class="footer-contact-title">Contact</div>
-            <ul class="footer-contact-list">
-                <li>📍 Rua dos Andradas, 1234</li>
-                <li>📞 (51) 3333-1234</li>
-                <li>✉️ info@pachamber.com</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <div>
-            &copy; <span id="year"></span> Porto Alegre Business Chamber
-        </div>
-    </div>
-</footer>
-
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Join the Porto Alegre Business Chamber" />
-<meta property="og:description" content="Become part of Porto Alegre's premier business network." />
-<meta property="og:image" content="https://gabrielchboff.github.io/chamber/facebook.webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://gabrielchboff.github.io/chamber/join.html" />
-<meta property="og:type" content="website" />
-
-
-
-</body>
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Join the Porto Alegre Business Chamber"
+        />
+        <meta
+            property="og:description"
+            content="Become part of Porto Alegre's premier business network."
+        />
+        <meta
+            property="og:image"
+            content="https://gabrielchboff.github.io/chamber/facebook.webp"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:url"
+            content="https://gabrielchboff.github.io/chamber/join.html"
+        />
+        <meta property="og:type" content="website" />
+    </body>
 </html>
-

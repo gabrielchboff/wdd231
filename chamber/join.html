@@ -1,402 +1,527 @@
 <!doctype html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Join | Porto Alegre Business Chamber</title>
+        <title>Join | Porto Alegre Business Chamber</title>
 
-    <meta
-        name="description"
-        content="Join the Porto Alegre Business Chamber and connect with a thriving business community."
-    />
-    <meta name="author" content="Gabriel Boff" />
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <meta
+            name="description"
+            content="Join the Porto Alegre Business Chamber and connect with a thriving business community."
+        />
+        <meta name="author" content="Gabriel Boff" />
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <!-- Preload critical CSS files -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/join.css" />
-    <!-- Load normalize asynchronously -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    </noscript>
-    
-    <!-- Load fonts with display swap and defer loading -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </noscript>
+        <!-- Preload critical CSS files -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/join.css" />
+        <!-- Load normalize asynchronously -->
+        <link
+            rel="preload"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            />
+        </noscript>
 
-    <link rel="icon" href="favicon.ico" />
+        <!-- Load fonts with display swap and defer loading -->
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
+        />
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+                rel="stylesheet"
+            />
+        </noscript>
 
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+        <link rel="icon" href="favicon.ico" />
 
-
-</head>
-<body>
-<header>
-    <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
-      <div class="nav-left">
-          <div class="nav-logo">PA</div>
-          <div class="nav-titles">
-              <span class="nav-title-main">Porto Alegre</span>
-              <span class="nav-title-sub">Business Chamber</span>
-          </div>
-      </div>
-      <button
-          id="navToggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          aria-controls="navLinks"
-      >
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-      <ul id="navLinks" class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html" class="active" aria-current="page">Join</a></li>
-          <li><a href="#">About</a></li>
-          <li class="nav-login-li">
-              <a href="#" class="nav-login-btn">Member Login</a>
-          </li>
-      </ul>
-      <a href="#" class="nav-login-btn">Member Login</a>
-  </nav>
-</header>
-
-<main class="join-main">
-    <div class="page-header">
-        <h1>Join the Chamber</h1>
-        <p>Become part of Porto Alegre's premier business network</p>
-    </div>
-
-    <div class="join-container">
-        <!-- Application Form -->
-        <section class="form-section">
-            <h2>Membership Application</h2>
-            <p class="form-intro">Complete the form below to apply for chamber membership. We'll review your application and contact you within 2-3 business days.</p>
-
-            <form id="membershipForm" method="get" action="thankyou.html">
-                <!-- Personal Information -->
-                <fieldset class="form-group">
-                    <legend>Personal Information</legend>
-                    
-                    <label for="firstName">
-                        First Name <span class="required">*</span>
-                        <input 
-                            type="text" 
-                            id="firstName" 
-                            name="firstName" 
-                            title="Enter your first name"
-                            autocomplete="given-name"
-                            required
-                        />
-                    </label>
-
-                    <label for="lastName">
-                        Last Name <span class="required">*</span>
-                        <input 
-                            type="text" 
-                            id="lastName" 
-                            name="lastName" 
-                            title="Enter your last name"
-                            autocomplete="family-name"
-                            required
-                        />
-                    </label>
-
-                    <label for="orgTitle">
-                        Organizational Title
-                        <input 
-                            type="text" 
-                            id="orgTitle" 
-                            name="orgTitle" 
-                            title="Your title within your organization"
-                            autocomplete="organization-title"
-                            pattern="[A-Za-z\s\-]{7,}"
-                            placeholder="e.g., Chief Executive Officer"
-                        />
-                        <span class="field-hint">Minimum 7 characters (letters, spaces, hyphens only)</span>
-                    </label>
-                </fieldset>
-
-                <!-- Contact Information -->
-                <fieldset class="form-group">
-                    <legend>Contact Information</legend>
-                    
-                    <label for="email">
-                        Email Address <span class="required">*</span>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            title="Enter your email address"
-                            autocomplete="email"
-                            placeholder="you@example.com"
-                            required
-                        />
-                    </label>
-
-                    <label for="mobile">
-                        Mobile Phone <span class="required">*</span>
-                        <input 
-                            type="tel" 
-                            id="mobile" 
-                            name="mobile" 
-                            title="Enter your mobile phone number"
-                            autocomplete="tel"
-                            required
-                        />
-                    </label>
-                </fieldset>
-
-                <!-- Business Information -->
-                <fieldset class="form-group">
-                    <legend>Business Information</legend>
-                    
-                    <label for="businessName">
-                        Business/Organization Name <span class="required">*</span>
-                        <input 
-                            type="text" 
-                            id="businessName" 
-                            name="businessName" 
-                            title="Enter your business or organization name"
-                            autocomplete="organization"
-                            required
-                        />
-                    </label>
-
-                    <label for="membershipLevel">
-                        Membership Level <span class="required">*</span>
-                        <select 
-                            id="membershipLevel" 
-                            name="membershipLevel" 
-                            title="Select your desired membership level"
-                            required
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+                <div class="nav-left">
+                    <div class="nav-logo">PA</div>
+                    <div class="nav-titles">
+                        <span class="nav-title-main">Porto Alegre</span>
+                        <span class="nav-title-sub">Business Chamber</span>
+                    </div>
+                </div>
+                <button
+                    id="navToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navLinks" class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li>
+                        <a href="join.html" class="active" aria-current="page"
+                            >Join</a
                         >
-                            <option value="">-- Select a Membership Level --</option>
-                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>
-
-                    <label for="businessDescription">
-                        Business Description
-                        <textarea 
-                            id="businessDescription" 
-                            name="businessDescription" 
-                            title="Describe your business or organization"
-                            rows="5"
-                            placeholder="Tell us about your business, products, or services..."
-                        ></textarea>
-                    </label>
-                </fieldset>
-
-                <!-- Hidden Timestamp -->
-                <input type="hidden" id="timestamp" name="timestamp" />
-
-                <!-- Submit Button -->
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit">Submit Application</button>
-                </div>
-            </form>
-        </section>
-
-        <!-- Membership Cards -->
-        <aside class="membership-cards">
-            <h2>Membership Levels</h2>
-            <p class="cards-intro">Choose the membership level that fits your organization's needs</p>
-
-            <div class="membership-card card-np">
-                <div class="card-header">
-                    <h3>NP Membership</h3>
-                    <p class="card-price">Free</p>
-                </div>
-                <p class="card-desc">For non-profit organizations</p>
-                <button class="btn-info" data-modal="np-modal">Learn More</button>
-            </div>
-
-            <div class="membership-card card-bronze">
-                <div class="card-header">
-                    <h3>Bronze</h3>
-                    <p class="card-price">$299/year</p>
-                </div>
-                <p class="card-desc">Essential networking & resources</p>
-                <button class="btn-info" data-modal="bronze-modal">Learn More</button>
-            </div>
-
-            <div class="membership-card card-silver">
-                <div class="card-header">
-                    <h3>Silver</h3>
-                    <p class="card-price">$599/year</p>
-                </div>
-                <p class="card-desc">Enhanced visibility & benefits</p>
-                <button class="btn-info" data-modal="silver-modal">Learn More</button>
-            </div>
-
-            <div class="membership-card card-gold">
-                <div class="card-header">
-                    <h3>Gold</h3>
-                    <p class="card-price">$999/year</p>
-                </div>
-                <p class="card-desc">Premium access & advertising</p>
-                <button class="btn-info" data-modal="gold-modal">Learn More</button>
-            </div>
-        </aside>
-    </div>
-
-    <!-- Modals -->
-    <div id="np-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" data-modal="np-modal">&times;</span>
-            <h2>NP Membership Benefits</h2>
-            <div class="modal-body">
-                <p class="modal-intro">Perfect for non-profit organizations looking to connect and grow</p>
-                <ul class="benefits-list">
-                    <li>✓ Free annual membership</li>
-                    <li>✓ Access to monthly networking events</li>
-                    <li>✓ Business directory listing</li>
-                    <li>✓ Member newsletter subscription</li>
-                    <li>✓ Volunteer and collaboration opportunities</li>
-                    <li>✓ Educational workshop access</li>
-                    <li>✓ Online resource library</li>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li class="nav-login-li">
+                        <a href="#" class="nav-login-btn">Member Login</a>
+                    </li>
                 </ul>
-                <p class="modal-cta">Join our community of non-profit organizations making a difference!</p>
+                <a href="#" class="nav-login-btn">Member Login</a>
+            </nav>
+        </header>
+
+        <main class="join-main">
+            <div class="page-header">
+                <h1>Join the Chamber</h1>
+                <p>Become part of Porto Alegre's premier business network</p>
             </div>
-        </div>
-    </div>
 
-    <div id="bronze-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" data-modal="bronze-modal">&times;</span>
-            <h2>Bronze Membership Benefits</h2>
-            <div class="modal-body">
-                <p class="modal-intro">Essential membership for growing businesses</p>
-                <ul class="benefits-list">
-                    <li>✓ All NP Membership benefits</li>
-                    <li>✓ Priority event registration</li>
-                    <li>✓ Enhanced directory listing with logo</li>
-                    <li>✓ Quarterly business workshops</li>
-                    <li>✓ Networking breakfast access (4 per year)</li>
-                    <li>✓ 10% discount on special events</li>
-                    <li>✓ Social media mentions (quarterly)</li>
-                    <li>✓ Member-to-member discounts</li>
-                </ul>
-                <p class="modal-cta">Start building connections that matter!</p>
+            <div class="join-container">
+                <!-- Application Form -->
+                <section class="form-section">
+                    <h2>Membership Application</h2>
+                    <p class="form-intro">
+                        Complete the form below to apply for chamber membership.
+                        We'll review your application and contact you within 2-3
+                        business days.
+                    </p>
+
+                    <form
+                        id="membershipForm"
+                        method="get"
+                        action="thankyou.html"
+                    >
+                        <!-- Personal Information -->
+                        <fieldset class="form-group">
+                            <legend>Personal Information</legend>
+
+                            <label for="firstName">
+                                First Name <span class="required">*</span>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    title="Enter your first name"
+                                    autocomplete="given-name"
+                                    required
+                                />
+                            </label>
+
+                            <label for="lastName">
+                                Last Name <span class="required">*</span>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    title="Enter your last name"
+                                    autocomplete="family-name"
+                                    required
+                                />
+                            </label>
+
+                            <label for="orgTitle">
+                                Organizational Title
+                                <input
+                                    type="text"
+                                    id="orgTitle"
+                                    name="orgTitle"
+                                    title="Your title within your organization"
+                                    autocomplete="organization-title"
+                                    pattern="[A-Za-z\s\-]{7,}"
+                                    placeholder="e.g., Chief Executive Officer"
+                                />
+                                <span class="field-hint"
+                                    >Minimum 7 characters (letters, spaces,
+                                    hyphens only)</span
+                                >
+                            </label>
+                        </fieldset>
+
+                        <!-- Contact Information -->
+                        <fieldset class="form-group">
+                            <legend>Contact Information</legend>
+
+                            <label for="email">
+                                Email Address <span class="required">*</span>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    title="Enter your email address"
+                                    autocomplete="email"
+                                    placeholder="you@example.com"
+                                    required
+                                />
+                            </label>
+
+                            <label for="mobile">
+                                Mobile Phone <span class="required">*</span>
+                                <input
+                                    type="tel"
+                                    id="mobile"
+                                    name="mobile"
+                                    title="Enter your mobile phone number"
+                                    autocomplete="tel"
+                                    required
+                                />
+                            </label>
+                        </fieldset>
+
+                        <!-- Business Information -->
+                        <fieldset class="form-group">
+                            <legend>Business Information</legend>
+
+                            <label for="businessName">
+                                Business/Organization Name
+                                <span class="required">*</span>
+                                <input
+                                    type="text"
+                                    id="businessName"
+                                    name="businessName"
+                                    title="Enter your business or organization name"
+                                    autocomplete="organization"
+                                    required
+                                />
+                            </label>
+
+                            <label for="membershipLevel">
+                                Membership Level <span class="required">*</span>
+                                <select
+                                    id="membershipLevel"
+                                    name="membershipLevel"
+                                    title="Select your desired membership level"
+                                    required
+                                >
+                                    <option value="">
+                                        -- Select a Membership Level --
+                                    </option>
+                                    <option value="np">
+                                        NP Membership (Non-Profit - No Fee)
+                                    </option>
+                                    <option value="bronze">
+                                        Bronze Membership
+                                    </option>
+                                    <option value="silver">
+                                        Silver Membership
+                                    </option>
+                                    <option value="gold">
+                                        Gold Membership
+                                    </option>
+                                </select>
+                            </label>
+
+                            <label for="businessDescription">
+                                Business Description
+                                <textarea
+                                    id="businessDescription"
+                                    name="businessDescription"
+                                    title="Describe your business or organization"
+                                    rows="5"
+                                    placeholder="Tell us about your business, products, or services..."
+                                ></textarea>
+                            </label>
+                        </fieldset>
+
+                        <!-- Hidden Timestamp -->
+                        <input type="hidden" id="timestamp" name="timestamp" />
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">
+                                Submit Application
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Membership Cards -->
+                <aside class="membership-cards">
+                    <h2>Membership Levels</h2>
+                    <p class="cards-intro">
+                        Choose the membership level that fits your
+                        organization's needs
+                    </p>
+
+                    <div class="membership-card card-np">
+                        <div class="card-header">
+                            <h3>NP Membership</h3>
+                            <p class="card-price">Free</p>
+                        </div>
+                        <p class="card-desc">For non-profit organizations</p>
+                        <button class="btn-info" data-modal="np-modal">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div class="membership-card card-bronze">
+                        <div class="card-header">
+                            <h3>Bronze</h3>
+                            <p class="card-price">$299/year</p>
+                        </div>
+                        <p class="card-desc">
+                            Essential networking & resources
+                        </p>
+                        <button class="btn-info" data-modal="bronze-modal">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div class="membership-card card-silver">
+                        <div class="card-header">
+                            <h3>Silver</h3>
+                            <p class="card-price">$599/year</p>
+                        </div>
+                        <p class="card-desc">Enhanced visibility & benefits</p>
+                        <button class="btn-info" data-modal="silver-modal">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div class="membership-card card-gold">
+                        <div class="card-header">
+                            <h3>Gold</h3>
+                            <p class="card-price">$999/year</p>
+                        </div>
+                        <p class="card-desc">Premium access & advertising</p>
+                        <button class="btn-info" data-modal="gold-modal">
+                            Learn More
+                        </button>
+                    </div>
+                </aside>
             </div>
-        </div>
-    </div>
 
-    <div id="silver-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" data-modal="silver-modal">&times;</span>
-            <h2>Silver Membership Benefits</h2>
-            <div class="modal-body">
-                <p class="modal-intro">Enhanced visibility for established businesses</p>
-                <ul class="benefits-list">
-                    <li>✓ All Bronze Membership benefits</li>
-                    <li>✓ Featured directory listing with enhanced profile</li>
-                    <li>✓ Monthly newsletter spotlight (once per year)</li>
-                    <li>✓ Complimentary booth at annual expo</li>
-                    <li>✓ Unlimited networking breakfast access</li>
-                    <li>✓ 15% discount on special events</li>
-                    <li>✓ Bi-monthly social media features</li>
-                    <li>✓ Access to member email list for announcements</li>
-                    <li>✓ Priority consideration for speaking opportunities</li>
-                    <li>✓ Complimentary business consultation (2 hours/year)</li>
-                </ul>
-                <p class="modal-cta">Elevate your business presence in the community!</p>
+            <!-- Modals -->
+            <div id="np-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" data-modal="np-modal"
+                        >&times;</span
+                    >
+                    <h2>NP Membership Benefits</h2>
+                    <div class="modal-body">
+                        <p class="modal-intro">
+                            Perfect for non-profit organizations looking to
+                            connect and grow
+                        </p>
+                        <ul class="benefits-list">
+                            <li>✓ Free annual membership</li>
+                            <li>✓ Access to monthly networking events</li>
+                            <li>✓ Business directory listing</li>
+                            <li>✓ Member newsletter subscription</li>
+                            <li>✓ Volunteer and collaboration opportunities</li>
+                            <li>✓ Educational workshop access</li>
+                            <li>✓ Online resource library</li>
+                        </ul>
+                        <p class="modal-cta">
+                            Join our community of non-profit organizations
+                            making a difference!
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div id="gold-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" data-modal="gold-modal">&times;</span>
-            <h2>Gold Membership Benefits</h2>
-            <div class="modal-body">
-                <p class="modal-intro">Premium membership with maximum exposure and benefits</p>
-                <ul class="benefits-list">
-                    <li>✓ All Silver Membership benefits</li>
-                    <li>✓ Home page spotlight feature (3 months per year)</li>
-                    <li>✓ Premium directory placement</li>
-                    <li>✓ Monthly newsletter spotlight (twice per year)</li>
-                    <li>✓ Logo on chamber website and marketing materials</li>
-                    <li>✓ Preferred booth location at annual expo</li>
-                    <li>✓ 20% discount on all special events</li>
-                    <li>✓ Weekly social media features</li>
-                    <li>✓ Guaranteed speaking opportunities at events</li>
-                    <li>✓ Complimentary business consultation (5 hours/year)</li>
-                    <li>✓ Exclusive Gold member networking events</li>
-                    <li>✓ Press release distribution assistance</li>
-                    <li>✓ VIP invitation to leadership events</li>
-                </ul>
-                <p class="modal-cta">Experience the ultimate chamber membership!</p>
+            <div id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" data-modal="bronze-modal"
+                        >&times;</span
+                    >
+                    <h2>Bronze Membership Benefits</h2>
+                    <div class="modal-body">
+                        <p class="modal-intro">
+                            Essential membership for growing businesses
+                        </p>
+                        <ul class="benefits-list">
+                            <li>✓ All NP Membership benefits</li>
+                            <li>✓ Priority event registration</li>
+                            <li>✓ Enhanced directory listing with logo</li>
+                            <li>✓ Quarterly business workshops</li>
+                            <li>✓ Networking breakfast access (4 per year)</li>
+                            <li>✓ 10% discount on special events</li>
+                            <li>✓ Social media mentions (quarterly)</li>
+                            <li>✓ Member-to-member discounts</li>
+                        </ul>
+                        <p class="modal-cta">
+                            Start building connections that matter!
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</main>
 
-<footer class="site-footer">
-    <div class="footer-top">
-        <div class="footer-brand">
-            <div class="footer-logo">PA</div>
-            <div class="footer-titles">
-                <span class="footer-title-main">Porto Alegre</span>
-                <span class="footer-title-sub">Business Chamber</span>
+            <div id="silver-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" data-modal="silver-modal"
+                        >&times;</span
+                    >
+                    <h2>Silver Membership Benefits</h2>
+                    <div class="modal-body">
+                        <p class="modal-intro">
+                            Enhanced visibility for established businesses
+                        </p>
+                        <ul class="benefits-list">
+                            <li>✓ All Bronze Membership benefits</li>
+                            <li>
+                                ✓ Featured directory listing with enhanced
+                                profile
+                            </li>
+                            <li>
+                                ✓ Monthly newsletter spotlight (once per year)
+                            </li>
+                            <li>✓ Complimentary booth at annual expo</li>
+                            <li>✓ Unlimited networking breakfast access</li>
+                            <li>✓ 15% discount on special events</li>
+                            <li>✓ Bi-monthly social media features</li>
+                            <li>
+                                ✓ Access to member email list for announcements
+                            </li>
+                            <li>
+                                ✓ Priority consideration for speaking
+                                opportunities
+                            </li>
+                            <li>
+                                ✓ Complimentary business consultation (2
+                                hours/year)
+                            </li>
+                        </ul>
+                        <p class="modal-cta">
+                            Elevate your business presence in the community!
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="footer-desc">
-            Building a stronger business community since 2026
-        </div>
+            <div id="gold-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" data-modal="gold-modal"
+                        >&times;</span
+                    >
+                    <h2>Gold Membership Benefits</h2>
+                    <div class="modal-body">
+                        <p class="modal-intro">
+                            Premium membership with maximum exposure and
+                            benefits
+                        </p>
+                        <ul class="benefits-list">
+                            <li>✓ All Silver Membership benefits</li>
+                            <li>
+                                ✓ Home page spotlight feature (3 months per
+                                year)
+                            </li>
+                            <li>✓ Premium directory placement</li>
+                            <li>
+                                ✓ Monthly newsletter spotlight (twice per year)
+                            </li>
+                            <li>
+                                ✓ Logo on chamber website and marketing
+                                materials
+                            </li>
+                            <li>✓ Preferred booth location at annual expo</li>
+                            <li>✓ 20% discount on all special events</li>
+                            <li>✓ Weekly social media features</li>
+                            <li>
+                                ✓ Guaranteed speaking opportunities at events
+                            </li>
+                            <li>
+                                ✓ Complimentary business consultation (5
+                                hours/year)
+                            </li>
+                            <li>✓ Exclusive Gold member networking events</li>
+                            <li>✓ Press release distribution assistance</li>
+                            <li>✓ VIP invitation to leadership events</li>
+                        </ul>
+                        <p class="modal-cta">
+                            Experience the ultimate chamber membership!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-        <div class="footer-links">
-            <div class="footer-links-title">Quick Links</div>
-            <ul class="footer-links-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">PA</div>
+                    <div class="footer-titles">
+                        <span class="footer-title-main">Porto Alegre</span>
+                        <span class="footer-title-sub">Business Chamber</span>
+                    </div>
+                </div>
 
-        <div class="footer-contact">
-            <div class="footer-contact-title">Contact</div>
-            <ul class="footer-contact-list">
-                <li>📍 Rua dos Andradas, 1234</li>
-                <li>📞 (51) 3333-1234</li>
-                <li>✉️ info@pachamber.com</li>
-            </ul>
-        </div>
-    </div>
+                <div class="footer-desc">
+                    Building a stronger business community since 2026
+                </div>
 
-    <div class="footer-bottom">
-        <div>
-            &copy; <span id="year"></span> Porto Alegre Business Chamber
-        </div>
-    </div>
-</footer>
+                <div class="footer-links">
+                    <div class="footer-links-title">Quick Links</div>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
 
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Join the Porto Alegre Business Chamber" />
-<meta property="og:description" content="Become part of Porto Alegre's premier business network." />
-<meta property="og:image" content="https://gabrielchboff.github.io/chamber/images/facebook.webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://gabrielchboff.github.io/chamber/join.html" />
-<meta property="og:type" content="website" />
+                <div class="footer-contact">
+                    <div class="footer-contact-title">Contact</div>
+                    <ul class="footer-contact-list">
+                        <li>📍 Rua dos Andradas, 1234</li>
+                        <li>📞 (51) 3333-1234</li>
+                        <li>✉️ info@pachamber.com</li>
+                    </ul>
+                </div>
+            </div>
 
-</body>
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="year"></span> Porto Alegre Business Chamber
+                </div>
+            </div>
+        </footer>
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Join the Porto Alegre Business Chamber"
+        />
+        <meta
+            property="og:description"
+            content="Become part of Porto Alegre's premier business network."
+        />
+        <meta
+            property="og:image"
+            content="https://gabrielchboff.github.io/chamber/images/facebook.webp"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:url"
+            content="https://gabrielchboff.github.io/chamber/join.html"
+        />
+        <meta property="og:type" content="website" />
+    </body>
 </html>

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Discover | Porto Alegre Business Chamber</title>
+
+        <meta
+            name="description"
+            content="Discover Porto Alegre: Explore local attractions, demographics, and features that make our area unique for chamber members and visitors."
+        />
+        <meta name="author" content="Gabriel Boff" />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Discover Porto Alegre | Porto Alegre Business Chamber"
+        />
+        <meta
+            property="og:description"
+            content="Explore Porto Alegre's top attractions, demographics, and features for chamber members and visitors."
+        />
+        <meta
+            property="og:image"
+            content="https://gabrielchboff.github.io/chamber/facebook.webp"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:url"
+            content="https://gabrielchboff.github.io/chamber/discover.html"
+        />
+        <meta property="og:type" content="website" />
+
+        <!-- Preconnect to external domains for faster loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+        <!-- Preload critical font to reduce CLS -->
+        <link
+            rel="preload"
+            href="https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+
+        <!-- Font with font-display: swap to prevent layout shift -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Normalize CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/discover.css" />
+
+        <link rel="icon" href="favicon.ico" />
+
+        <!-- Discover page script -->
+        <script type="module" src="scripts/discover.js"></script>
+
+        <style>
+            /* Fallback font to prevent CLS while web fonts load */
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+                    sans-serif;
+            }
+
+            /* Reserve space for visitor message to prevent layout shift */
+            #visitorMessage {
+                min-height: 3rem;
+            }
+
+            /* Reserve space for attraction cards to prevent layout shift */
+            #attractionsGrid {
+                min-height: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+                <div class="nav-left">
+                    <div class="nav-logo">PA</div>
+                    <div class="nav-titles">
+                        <span class="nav-title-main">Porto Alegre</span>
+                        <span class="nav-title-sub">Business Chamber</span>
+                    </div>
+                </div>
+                <button
+                    id="navToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navLinks" class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a
+                            href="discover.html"
+                            class="active"
+                            aria-current="page"
+                            >Discover</a
+                        >
+                    </li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="nav-login-li">
+                        <a href="#" class="nav-login-btn">Member Login</a>
+                    </li>
+                </ul>
+                <a href="#" class="nav-login-btn">Member Login</a>
+            </nav>
+        </header>
+
+        <main class="discover-main">
+            <section
+                class="visitor-message-section"
+                id="visitorMessage"
+                aria-live="polite"
+            >
+                <!-- Visitor message will be injected here by JS -->
+            </section>
+
+            <section class="discover-intro">
+                <h1>Discover Porto Alegre</h1>
+                <p>
+                    Explore the vibrant city of Porto Alegre! Here are some of
+                    the top attractions, landmarks, and features that make our
+                    area unique and appealing to both chamber members and
+                    visitors.
+                </p>
+            </section>
+
+            <section
+                class="attractions-section"
+                aria-label="Porto Alegre Attractions"
+            >
+                <div class="attractions-grid" id="attractionsGrid">
+                    <!-- Attraction cards will be injected here by JS -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">PA</div>
+                    <div class="footer-titles">
+                        <span class="footer-title-main">Porto Alegre</span>
+                        <span class="footer-title-sub">Business Chamber</span>
+                    </div>
+                </div>
+
+                <div class="footer-desc">
+                    Building a stronger business community since 2026
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-links-title">Quick Links</div>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <div class="footer-contact-title">Contact</div>
+                    <ul class="footer-contact-list">
+                        <li>📍 Rua dos Andradas, 1234</li>
+                        <li>📞 (51) 3333-1234</li>
+                        <li>✉️ info@pachamber.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="year"></span> Porto Alegre Business Chamber
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Set current year in footer
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+
+            // Navigation toggle functionality
+            const navToggle = document.getElementById("navToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            navToggle.addEventListener("click", () => {
+                const isOpen = navLinks.classList.toggle("open");
+                navToggle.setAttribute("aria-expanded", isOpen);
+            });
+        </script>
+    </body>
+</html>

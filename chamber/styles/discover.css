@@ -1,0 +1,250 @@
+/* Discover Page Responsive Grid and Effects */
+
+/* Base styles */
+.discover-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #2a5d84;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.learn-more-btn:hover {
+    background: #1a4d74;
+}
+
+.visitor-message-section {
+    margin-bottom: 1.5rem;
+    padding: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.discover-intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.discover-intro h1 {
+    color: #2a5d84;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.discover-intro p {
+    color: #2a3a4b;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.attractions-section {
+    width: 100%;
+}
+
+.attractions-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.attraction-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.attraction-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1a2a3a;
+    text-align: center;
+}
+
+.attraction-card figure {
+    margin: 0 0 0.7rem 0;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition:
+        filter 0.3s,
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.attraction-card address {
+    font-style: normal;
+    color: #4a5a6a;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.attraction-card p {
+    font-size: 1rem;
+    color: #2a3a4b;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.attraction-card button {
+    background: #1a6ed8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.attraction-card button:hover,
+.attraction-card button:focus {
+    background: #1558a5;
+}
+
+/* Assign grid areas for each card */
+.attraction-card:nth-child(1) {
+    grid-area: card1;
+}
+.attraction-card:nth-child(2) {
+    grid-area: card2;
+}
+.attraction-card:nth-child(3) {
+    grid-area: card3;
+}
+.attraction-card:nth-child(4) {
+    grid-area: card4;
+}
+.attraction-card:nth-child(5) {
+    grid-area: card5;
+}
+.attraction-card:nth-child(6) {
+    grid-area: card6;
+}
+.attraction-card:nth-child(7) {
+    grid-area: card7;
+}
+.attraction-card:nth-child(8) {
+    grid-area: card8;
+}
+
+/* ===== SMALL SCREENS (320px - 640px) =====
+   LAYOUT: Single column, linear progression
+   All cards equal width, stacked vertically */
+@media (max-width: 640px) {
+    .attractions-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+
+    /* No hover effect on mobile */
+    .attraction-card img:hover {
+        filter: none !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* ===== MEDIUM SCREENS (641px - 1024px) =====
+   LAYOUT: Symmetric 2x4 grid
+   Two equal columns, four rows
+   Different arrangement than mobile creates distinct layout */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .attractions-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        gap: 1.5rem;
+    }
+
+    /* Hover effect for images */
+    .attraction-card img:hover {
+        filter: brightness(1.08) saturate(1.2)
+            drop-shadow(0 4px 16px rgba(26, 110, 216, 0.15));
+        transform: scale(1.04) rotate(-1deg);
+        box-shadow: 0 4px 24px rgba(26, 110, 216, 0.1);
+    }
+}
+
+/* ===== LARGE SCREENS (1025px+) =====
+   LAYOUT: Symmetric 3x3 masonry-style grid
+   Row 1: 3 cards across
+   Row 2: 3 cards across
+   Row 3: 2 cards centered
+   Creates a pyramid/balanced layout */
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card2 card3 card3"
+            "card4 card4 card5 card5 card6 card6"
+            ". card7 card7 card8 card8 .";
+        gap: 2rem;
+    }
+
+    /* Bottom row cards get centered with dot (.) spacing */
+    .attraction-card:nth-child(7),
+    .attraction-card:nth-child(8) {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    }
+
+    /* Hover effect for images */
+    .attraction-card img:hover {
+        filter: brightness(1.12) saturate(1.3)
+            drop-shadow(0 6px 24px rgba(26, 110, 216, 0.18));
+        transform: scale(1.06) rotate(-2deg);
+        box-shadow: 0 8px 32px rgba(26, 110, 216, 0.13);
+    }
+}
+
+/* Accessibility: focus style for cards */
+.attraction-card:focus-within {
+    outline: 2px solid #1a6ed8;
+    outline-offset: 2px;
+}

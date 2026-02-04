@@ -182,7 +182,6 @@ header {
 
 /* MAIN CONTENT */
 
-
 main.home-main {
     max-width: 100%;
     margin: 64px 0 0 0;
@@ -533,8 +532,6 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-    
-
     main.home-main {
         margin: 64px 0 0 0;
         padding: 0;
@@ -668,4 +665,3 @@ a:hover {
         margin-top: 0;
     }
 }
-
