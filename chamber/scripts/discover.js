@@ -1,5 +1,17 @@
 import { attractions } from "../data/discover.mjs";
 
+// Set current year in footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Navigation toggle functionality
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+navToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", isOpen);
+});
+
 // -------- Visitor Message Logic --------
 const visitorMessageSection = document.getElementById("visitorMessage");
 const LAST_VISIT_KEY = "discoverLastVisit";

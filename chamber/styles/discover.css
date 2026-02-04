@@ -21,6 +21,16 @@
     transition: background 0.2s;
 }
 
+/* Reserve space for visitor message to prevent layout shift */
+#visitorMessage {
+    min-height: 3rem;
+}
+
+/* Reserve space for attraction cards to prevent layout shift */
+#attractionsGrid {
+    min-height: 600px;
+}
+
 .learn-more-btn:hover {
     background: #1a4d74;
 }
