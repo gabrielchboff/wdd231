@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Meet the talented engineers and inventors in our community. Connect, collaborate, and innovate together."
+        />
+        <meta name="author" content="Engineering Inventors Club" />
+        <meta
+            property="og:title"
+            content="Engineering Inventors Club - Members"
+        />
+        <meta
+            property="og:description"
+            content="Connect with talented engineers and inventors from around the world."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/hero.webp" />
+        <title>Members - Engineering Inventors Club</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/members.css" />
+        <script type="module" defer src="scripts/members.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+                <div class="nav-left">
+                    <div class="nav-logo">⚙️</div>
+                    <div class="nav-titles">
+                        <span class="nav-title-main"
+                            >Engineering Inventors</span
+                        >
+                        <span class="nav-title-sub">Innovation Community</span>
+                    </div>
+                </div>
+                <button
+                    id="navToggle"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navLinks" class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="members.html" class="active">Members</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-header">
+                <h1>Our Community</h1>
+                <p class="page-subtitle">
+                    Meet the brilliant minds driving innovation forward
+                </p>
+            </section>
+
+            <section class="stats-banner">
+                <div class="stat-item">
+                    <span class="stat-value" id="totalMembers">0</span>
+                    <span class="stat-label">Total Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="countries">0</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="specialties">0</span>
+                    <span class="stat-label">Specialties</span>
+                </div>
+            </section>
+
+            <section class="search-section">
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="memberSearch"
+                        class="search-input"
+                        placeholder="Search members by name or specialty..."
+                    />
+                    <select id="specialtyFilter" class="filter-select">
+                        <option value="all">All Specialties</option>
+                        <option value="mechanical">
+                            Mechanical Engineering
+                        </option>
+                        <option value="electrical">
+                            Electrical Engineering
+                        </option>
+                        <option value="software">Software Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="biomedical">
+                            Biomedical Engineering
+                        </option>
+                        <option value="chemical">Chemical Engineering</option>
+                        <option value="aerospace">Aerospace Engineering</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="members-section">
+                <div id="membersGrid" class="members-grid">
+                    <div class="loading-spinner">Loading members...</div>
+                </div>
+                <div id="noResults" class="no-results" hidden>
+                    <p>No members found matching your search criteria.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚙️</div>
+                    <div class="footer-titles">
+                        <span class="footer-title-main"
+                            >Engineering Inventors</span
+                        >
+                        <span class="footer-title-sub"
+                            >Innovation Community</span
+                        >
+                    </div>
+                </div>
+                <div class="footer-desc">
+                    Empowering innovators to build the future since 2020
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-title">Quick Links</div>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="members.html">Members</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-title">Contact</div>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span>📍</span> 123 Innovation Drive, Tech Valley
+                        </li>
+                        <li><span>📞</span> (555) 123-4567</li>
+                        <li>
+                            <span>✉️</span>
+                            <a
+                                href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="442d2a222b04212a232d2a212136372d2a32212a302b36376a27283126"
+                                >[email&#160;protected]</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-social-title">Follow Us</div>
+                    <div class="footer-social-list">
+                        <a href="#" aria-label="GitHub"><span>💻</span></a>
+                        <a href="#" aria-label="LinkedIn"><span>💼</span></a>
+                        <a href="#" aria-label="Twitter"><span>🐦</span></a>
+                        <a href="#" aria-label="YouTube"><span>📺</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="year"></span> Engineering Inventors Club.
+                    All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="attributions.html">Attributions</a>
+                    <a href="https://youtu.be/dz--iA4TLG0" target="_blank"
+                        >Video Demo</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <div
+            id="memberModal"
+            class="modal"
+            role="dialog"
+            aria-labelledby="memberModalTitle"
+            aria-modal="true"
+            hidden
+        >
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">
+                    &times;
+                </button>
+                <div id="memberModalContent">
+                    <!-- Content will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore innovative projects from our Engineering Inventors Club members - robotics, IoT, renewable energy, and cutting-edge technology.">
+    <meta name="author" content="Engineering Inventors Club">
+    <meta property="og:title" content="Engineering Inventors Club - Projects">
+    <meta property="og:description" content="Discover amazing inventions and innovations from our engineering community.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.webp">
+    <title>Projects - Engineering Inventors Club</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <script type="module" defer src="scripts/projects.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+            <div class="nav-left">
+                <div class="nav-logo">⚙️</div>
+                <div class="nav-titles">
+                    <span class="nav-title-main">Engineering Inventors</span>
+                    <span class="nav-title-sub">Innovation Community</span>
+                </div>
+            </div>
+            <button id="navToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="members.html">Members</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Innovation Showcase</h1>
+            <p class="page-subtitle">Explore groundbreaking projects created by our talented members</p>
+        </section>
+
+        <section class="filters-section">
+            <div class="filters-container">
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categoryFilter" class="filter-select">
+                    <option value="all">All Categories</option>
+                    <option value="robotics">Robotics</option>
+                    <option value="iot">IoT & Smart Devices</option>
+                    <option value="renewable">Renewable Energy</option>
+                    <option value="medical">Medical Devices</option>
+                    <option value="automation">Automation</option>
+                    <option value="software">Software & AI</option>
+                </select>
+
+                <label for="statusFilter">Filter by Status:</label>
+                <select id="statusFilter" class="filter-select">
+                    <option value="all">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                    <option value="prototype">Prototype</option>
+                </select>
+
+                <button id="resetFilters" class="reset-button">Reset Filters</button>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div id="projectsGrid" class="projects-grid">
+                <div class="loading-spinner">Loading projects...</div>
+            </div>
+            <div id="noResults" class="no-results" hidden>
+                <p>No projects match your filters. Try adjusting your criteria.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">⚙️</div>
+                <div class="footer-titles">
+                    <span class="footer-title-main">Engineering Inventors</span>
+                    <span class="footer-title-sub">Innovation Community</span>
+                </div>
+            </div>
+            <div class="footer-desc">
+                Empowering innovators to build the future since 2020
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-title">Quick Links</div>
+                <ul class="footer-links-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="members.html">Members</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-title">Contact</div>
+                <ul class="footer-contact-list">
+                    <li><span>📍</span> 123 Innovation Drive,</span> Tech Valley</li>
+                    <li><span>📞</span> (555) 123-4567</li>
+                    <li><span>✉️</span> <a href="mailto:info@engineeringinventors.club">info@engineeringinventors.club</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-title">Follow Us</div>
+                <div class="footer-social-list">
+                    <a href="#" aria-label="GitHub"><span>💻</span></a>
+                    <a href="#" aria-label="LinkedIn</span>"><span>💼</span></a>
+                    <a href="#" aria-label="Twitter"><span>🐦</span></a>
+                    <a href="#" aria-label="YouTube"><span>📺</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; <span id="year"></span> Engineering Inventors Club. All rights reserved.</div>
+            <div class="footer-bottom-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="https://youtu.be/dz--iA4TLG0" target="_blank">Video Demo</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal" role="dialog" aria-labelledby="projectModalTitle" aria-modal="true" hidden>
+        <div class="modal-content modal-large">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="projectModalContent">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

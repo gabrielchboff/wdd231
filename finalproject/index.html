@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Engineering Inventors Club - A community of innovators, creators, and engineers pushing the boundaries of technology and invention."
+        />
+        <meta name="author" content="Engineering Inventors Club" />
+        <meta property="og:title" content="Engineering Inventors Club - Home" />
+        <meta
+            property="og:description"
+            content="Join a community of innovators, creators, and engineers pushing the boundaries of technology."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="images/hero.webp" />
+        <title>Home - Engineering Inventors Club</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <script type="module" defer src="scripts/home.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="main-navbar" aria-label="Main Navigation" id="mainNav">
+                <div class="nav-left">
+                    <div class="nav-logo">⚙️</div>
+                    <div class="nav-titles">
+                        <span class="nav-title-main"
+                            >Engineering Inventors</span
+                        >
+                        <span class="nav-title-sub">Innovation Community</span>
+                    </div>
+                </div>
+                <button
+                    id="navToggle"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="navLinks"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="navLinks" class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="members.html">Members</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Engineering Inventors Club</h1>
+                    <p class="hero-subtitle">
+                        Where innovation meets collaboration
+                    </p>
+                    <p class="hero-description">
+                        Join a community of passionate engineers, inventors, and
+                        creators building the future through cutting-edge
+                        technology and breakthrough innovations.
+                    </p>
+                    <button id="joinBtn" class="cta-button">
+                        Join Our Community
+                    </button>
+                    
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="memberCount">0</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="projectCount">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="patentCount">0</span>
+                        <span class="stat-label">Patents Filed</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Why Join Us?</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🔬</div>
+                        <h3>Innovation Labs</h3>
+                        <p>
+                            Access state-of-the-art facilities with 3D printers,
+                            CNC machines, electronics workbenches, and
+                            prototyping tools.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Collaboration</h3>
+                        <p>
+                            Connect with fellow inventors, share ideas, and work
+                            together on groundbreaking projects.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>Mentorship</h3>
+                        <p>
+                            Learn from experienced engineers and industry
+                            experts through workshops and one-on-one guidance.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Competitions</h3>
+                        <p>
+                            Participate in hackathons, design challenges, and
+                            innovation contests with prizes and recognition.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Resources</h3>
+                        <p>
+                            Access extensive libraries, research papers,
+                            technical documentation, and learning materials.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Community</h3>
+                        <p>
+                            Join a global network of inventors and engineers
+                            making a positive impact on the world.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="latest-projects-section">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">
+                    Discover the amazing innovations our members are creating
+                </p>
+                <div id="featuredProjects" class="projects-preview">
+                    <div class="loading-spinner">Loading projects...</div>
+                </div>
+                <a href="projects.html" class="view-all-link"
+                    >View All Projects →</a
+                >
+            </section>
+
+            <section class="testimonials-section">
+                <h2>Member Stories</h2>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card">
+                        <p>
+                            "The Engineering Inventors Club gave me the
+                            resources and community I needed to bring my
+                            robotics project to life. It's incredible!"
+                        </p>
+                        <cite>— Sarah Chen, Robotics Engineer</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>
+                            "I've met some of the most talented and inspiring
+                            people here. The collaborative environment is
+                            unmatched."
+                        </p>
+                        <cite>— Marcus Rodriguez, Software Architect</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>
+                            "From concept to prototype in weeks, thanks to the
+                            lab facilities and expert mentorship available at
+                            the club."
+                        </p>
+                        <cite>— Dr. Emily Watson, Biomedical Engineer</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Ready to Start Inventing?</h2>
+                    <p>
+                        Join hundreds of engineers and inventors making a
+                        difference
+                    </p>
+                    <button id="joinBtnBottom" class="cta-button-secondary">
+                        Become a Member
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚙️</div>
+                    <div class="footer-titles">
+                        <span class="footer-title-main"
+                            >Engineering Inventors</span
+                        >
+                        <span class="footer-title-sub"
+                            >Innovation Community</span
+                        >
+                    </div>
+                </div>
+                <div class="footer-desc">
+                    Empowering innovators to build the future since 2020
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-title">Quick Links</div>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="members.html">Members</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-title">Contact</div>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span>📍</span> 123 Innovation Drive, Tech Valley
+                        </li>
+                        <li><span>📞</span> (555) 123-4567</li>
+                        <li>
+                            <span>✉️</span>
+                            <a
+                                href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="dbb2b5bdb49bbeb5bcb2b5bebea9a8b2b5adbeb5afb4a9a8f5b8b7aeb9"
+                                >[email&#160;protected]</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="footer-social-title">Follow Us</div>
+                    <div class="footer-social-list">
+                        <a href="#" aria-label="GitHub"><span>💻</span></a>
+                        <a href="#" aria-label="LinkedIn"><span>💼</span></a>
+                        <a href="#" aria-label="Twitter"><span>🐦</span></a>
+                        <a href="#" aria-label="YouTube"><span>📺</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="year"></span> Engineering Inventors Club.
+                    All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="attributions.html">Attributions</a>
+                    <a href="https://youtu.be/dz--iA4TLG0" target="_blank"
+                        >Video Demo</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <div
+            id="joinModal"
+            class="modal"
+            role="dialog"
+            aria-labelledby="modalTitle"
+            aria-modal="true"
+            hidden
+        >
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">
+                    &times;
+                </button>
+                <h2 id="modalTitle">Join Our Community</h2>
+                <form id="joinForm" action="thank-you.html" method="get">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="specialty">Engineering Specialty *</label>
+                        <select id="specialty" name="specialty" required>
+                            <option value="">Select your specialty</option>
+                            <option value="mechanical">
+                                Mechanical Engineering
+                            </option>
+                            <option value="electrical">
+                                Electrical Engineering
+                            </option>
+                            <option value="software">
+                                Software Engineering
+                            </option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="biomedical">
+                                Biomedical Engineering
+                            </option>
+                            <option value="chemical">
+                                Chemical Engineering
+                            </option>
+                            <option value="aerospace">
+                                Aerospace Engineering
+                            </option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Years of Experience *</label>
+                        <input
+                            type="number"
+                            id="experience"
+                            name="experience"
+                            min="0"
+                            max="50"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Project Interests</label>
+                        <textarea
+                            id="interests"
+                            name="interests"
+                            rows="4"
+                            placeholder="Tell us about your invention ideas or areas of interest..."
+                        ></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="newsletter"
+                                value="yes"
+                            />
+                            Subscribe to our monthly newsletter
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div
+            id="homeProjectModal"
+            class="modal"
+            role="dialog"
+            aria-labelledby="homeProjectModalTitle"
+            aria-modal="true"
+            hidden
+        >
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">
+                    &times;
+                </button>
+                <div id="homeProjectModalContent">
+                    <!-- Content will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

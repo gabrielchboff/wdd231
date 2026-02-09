@@ -1,0 +1,400 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Smart Home Energy Monitor",
+      "category": "iot",
+      "status": "active",
+      "description": "Real-time energy consumption monitoring system with AI-powered optimization suggestions.",
+      "inventor": "Sarah Chen",
+      "year": 2024,
+      "icon": "⚡",
+      "features": [
+        "Real-time energy consumption tracking",
+        "Machine learning predictions for energy usage",
+        "Mobile app integration",
+        "Automated cost-saving recommendations"
+      ],
+      "technologies": ["Arduino", "Python", "TensorFlow", "React Native"],
+      "impact": "Reduces household energy costs by an average of 23% through intelligent monitoring and automation."
+    },
+    {
+      "id": 2,
+      "title": "Autonomous Delivery Drone",
+      "category": "robotics",
+      "status": "prototype",
+      "description": "AI-powered drone capable of autonomous package delivery in urban environments.",
+      "inventor": "Marcus Rodriguez",
+      "year": 2025,
+      "icon": "🚁",
+      "features": [
+        "GPS and computer vision navigation",
+        "Obstacle avoidance system",
+        "Weather-resistant design",
+        "Payload capacity up to 5kg"
+      ],
+      "technologies": ["ROS", "OpenCV", "C++", "LiDAR"],
+      "impact": "Enables zero-emission last-mile delivery with 60% faster delivery times in test areas."
+    },
+    {
+      "id": 3,
+      "title": "Water Purification System",
+      "category": "renewable",
+      "status": "completed",
+      "description": "Solar-powered water purification device for remote communities.",
+      "inventor": "Dr. Emily Watson",
+      "year": 2023,
+      "icon": "💧",
+      "features": [
+        "Solar-powered operation",
+        "Removes 99.9% of contaminants",
+        "Portable and lightweight design",
+        "Low maintenance requirements"
+      ],
+      "technologies": ["UV-C LED", "Solar Panels", "Arduino", "Water Quality Sensors"],
+      "impact": "Provides clean drinking water to over 5,000 people in 12 remote villages."
+    },
+    {
+      "id": 4,
+      "title": "Robotic Prosthetic Arm",
+      "category": "medical",
+      "status": "active",
+      "description": "Advanced prosthetic arm with neural interface for natural movement control.",
+      "inventor": "Dr. James Park",
+      "year": 2024,
+      "icon": "🦾",
+      "features": [
+        "EMG sensor integration",
+        "Natural grip patterns",
+        "Tactile feedback system",
+        "Lightweight carbon fiber construction"
+      ],
+      "technologies": ["EMG Sensors", "Machine Learning", "3D Printing", "Microcontrollers"],
+      "impact": "Restores 85% of natural hand functionality at 40% of traditional prosthetic costs."
+    },
+    {
+      "id": 5,
+      "title": "Smart Farming Assistant",
+      "category": "iot",
+      "status": "active",
+      "description": "IoT-based crop monitoring and automated irrigation system for precision agriculture.",
+      "inventor": "Maria Santos",
+      "year": 2024,
+      "icon": "🌾",
+      "features": [
+        "Soil moisture and pH monitoring",
+        "Weather prediction integration",
+        "Automated irrigation control",
+        "Pest detection using computer vision"
+      ],
+      "technologies": ["IoT Sensors", "Cloud Computing", "Computer Vision", "Node.js"],
+      "impact": "Increases crop yields by 35% while reducing water usage by 45%."
+    },
+    {
+      "id": 6,
+      "title": "Traffic Flow Optimizer",
+      "category": "software",
+      "status": "prototype",
+      "description": "AI system that optimizes traffic light timing to reduce congestion in real-time.",
+      "inventor": "David Kim",
+      "year": 2025,
+      "icon": "🚦",
+      "features": [
+        "Real-time traffic analysis",
+        "Adaptive signal timing",
+        "Emergency vehicle priority",
+        "Predictive congestion modeling"
+      ],
+      "technologies": ["Python", "TensorFlow", "Computer Vision", "Cloud Infrastructure"],
+      "impact": "Reduces average commute times by 28% in pilot city implementations."
+    },
+    {
+      "id": 7,
+      "title": "Modular Recycling Station",
+      "category": "automation",
+      "status": "completed",
+      "description": "Automated sorting and processing system for residential recycling.",
+      "inventor": "Lisa Anderson",
+      "year": 2023,
+      "icon": "♻️",
+      "features": [
+        "AI-powered material identification",
+        "Automatic sorting mechanism",
+        "Compaction and storage",
+        "User-friendly interface"
+      ],
+      "technologies": ["Computer Vision", "Robotics", "Python", "Raspberry Pi"],
+      "impact": "Increases recycling accuracy to 97% and reduces contamination by 80%."
+    },
+    {
+      "id": 8,
+      "title": "Emergency Response Quadruped",
+      "category": "robotics",
+      "status": "active",
+      "description": "Four-legged robot designed for search and rescue operations in hazardous environments.",
+      "inventor": "Alex Thompson",
+      "year": 2024,
+      "icon": "🤖",
+      "features": [
+        "All-terrain mobility",
+        "Thermal imaging cameras",
+        "Gas detection sensors",
+        "Two-way communication system"
+      ],
+      "technologies": ["ROS", "SLAM", "LiDAR", "C++"],
+      "impact": "Deployed in 15 disaster zones, assisting in locating 73 survivors."
+    },
+    {
+      "id": 9,
+      "title": "Portable Wind Turbine",
+      "category": "renewable",
+      "status": "completed",
+      "description": "Compact, deployable wind turbine for off-grid power generation.",
+      "inventor": "Robert Chen",
+      "year": 2023,
+      "icon": "🌬️",
+      "features": [
+        "Foldable blade design",
+        "Automatic positioning system",
+        "Battery storage integration",
+        "Weather-resistant materials"
+      ],
+      "technologies": ["CAD Design", "3D Printing", "Power Electronics", "Arduino"],
+      "impact": "Provides reliable power for remote research stations and emergency shelters."
+    },
+    {
+      "id": 10,
+      "title": "Neural Network Health Monitor",
+      "category": "medical",
+      "status": "prototype",
+      "description": "Wearable device that uses AI to detect early signs of health issues.",
+      "inventor": "Dr. Priya Patel",
+      "year": 2025,
+      "icon": "❤️",
+      "features": [
+        "Continuous vital signs monitoring",
+        "Anomaly detection algorithms",
+        "Emergency alert system",
+        "Data privacy encryption"
+      ],
+      "technologies": ["Biosensors", "Deep Learning", "Mobile Apps", "Cloud Computing"],
+      "impact": "Early detection of cardiac events with 94% accuracy in clinical trials."
+    },
+    {
+      "id": 11,
+      "title": "Smart Beehive System",
+      "category": "iot",
+      "status": "active",
+      "description": "IoT monitoring system for commercial beekeeping operations.",
+      "inventor": "Tom Wilson",
+      "year": 2024,
+      "icon": "🐝",
+      "features": [
+        "Temperature and humidity tracking",
+        "Hive weight monitoring",
+        "Pest detection alerts",
+        "Queen bee health indicators"
+      ],
+      "technologies": ["IoT Sensors", "LoRaWAN", "Data Analytics", "Mobile App"],
+      "impact": "Increases bee colony survival rates by 42% through early intervention."
+    },
+    {
+      "id": 12,
+      "title": "Automated Vertical Farm",
+      "category": "automation",
+      "status": "active",
+      "description": "Fully automated indoor farming system with precision environmental control.",
+      "inventor": "Jennifer Lee",
+      "year": 2024,
+      "icon": "🏢",
+      "features": [
+        "LED grow light optimization",
+        "Automated nutrient delivery",
+        "Climate control system",
+        "Robotic harvesting"
+      ],
+      "technologies": ["Hydroponics", "Robotics", "IoT", "Machine Learning"],
+      "impact": "Produces 50x more food per square meter than traditional farming."
+    },
+    {
+      "id": 13,
+      "title": "Earthquake Early Warning Network",
+      "category": "iot",
+      "status": "completed",
+      "description": "Distributed sensor network for detecting and alerting about seismic activity.",
+      "inventor": "Dr. Michael Zhang",
+      "year": 2023,
+      "icon": "🌍",
+      "features": [
+        "Real-time seismic monitoring",
+        "P-wave detection algorithms",
+        "Multi-channel alert system",
+        "Public safety integration"
+      ],
+      "technologies": ["Seismometers", "Edge Computing", "5G Networks", "Python"],
+      "impact": "Provides 10-30 seconds advance warning, saving lives in earthquake-prone regions."
+    },
+    {
+      "id": 14,
+      "title": "Adaptive Learning Platform",
+      "category": "software",
+      "status": "active",
+      "description": "AI-powered educational platform that adapts to individual learning styles.",
+      "inventor": "Dr. Susan Miller",
+      "year": 2024,
+      "icon": "📚",
+      "features": [
+        "Personalized learning paths",
+        "Real-time comprehension assessment",
+        "Multi-modal content delivery",
+        "Progress analytics dashboard"
+      ],
+      "technologies": ["React", "Python", "Machine Learning", "Natural Language Processing"],
+      "impact": "Improves student performance by 45% compared to traditional learning methods."
+    },
+    {
+      "id": 15,
+      "title": "Ocean Cleanup Drone Fleet",
+      "category": "robotics",
+      "status": "prototype",
+      "description": "Autonomous surface drones that collect plastic waste from oceans.",
+      "inventor": "Carlos Mendez",
+      "year": 2025,
+      "icon": "🌊",
+      "features": [
+        "Autonomous navigation",
+        "Plastic detection system",
+        "Solar-powered operation",
+        "Swarm coordination"
+      ],
+      "technologies": ["Computer Vision", "Solar Panels", "GPS", "Arduino"],
+      "impact": "Prototype collected 2 tons of plastic waste in 3-month trial period."
+    },
+    {
+      "id": 16,
+      "title": "Smart Fire Detection System",
+      "category": "iot",
+      "status": "completed",
+      "description": "Advanced fire detection using computer vision and multiple sensor types.",
+      "inventor": "Rachel Green",
+      "year": 2023,
+      "icon": "🔥",
+      "features": [
+        "Smoke and heat detection",
+        "Visual flame recognition",
+        "Automatic emergency alerts",
+        "False alarm reduction"
+      ],
+      "technologies": ["Computer Vision", "IoT Sensors", "Edge AI", "Cloud Services"],
+      "impact": "Reduces false alarms by 85% while detecting fires 3x faster than traditional systems."
+    },
+    {
+      "id": 17,
+      "title": "Exoskeleton for Construction Workers",
+      "category": "robotics",
+      "status": "active",
+      "description": "Wearable robotic exoskeleton that reduces physical strain in construction work.",
+      "inventor": "Daniel Brooks",
+      "year": 2024,
+      "icon": "👷",
+      "features": [
+        "Load-bearing assistance",
+        "Ergonomic design",
+        "Battery operation",
+        "Safety monitoring"
+      ],
+      "technologies": ["Mechanical Engineering", "Sensors", "Actuators", "Microcontrollers"],
+      "impact": "Reduces work-related injuries by 60% and increases productivity by 35%."
+    },
+    {
+      "id": 18,
+      "title": "Air Quality Monitoring Mesh",
+      "category": "iot",
+      "status": "active",
+      "description": "City-wide air quality monitoring network with real-time pollution mapping.",
+      "inventor": "Dr. Aisha Kumar",
+      "year": 2024,
+      "icon": "🌫️",
+      "features": [
+        "Multi-pollutant detection",
+        "Real-time data visualization",
+        "Predictive analytics",
+        "Public health alerts"
+      ],
+      "technologies": ["Gas Sensors", "LoRaWAN", "Data Analytics", "Web Technologies"],
+      "impact": "Helps 2 million residents make informed decisions about outdoor activities."
+    },
+    {
+      "id": 19,
+      "title": "Automated PCB Inspection System",
+      "category": "automation",
+      "status": "completed",
+      "description": "Computer vision system for detecting defects in printed circuit boards.",
+      "inventor": "Kevin Yamamoto",
+      "year": 2023,
+      "icon": "🔍",
+      "features": [
+        "High-resolution imaging",
+        "AI defect detection",
+        "Real-time quality control",
+        "Manufacturing integration"
+      ],
+      "technologies": ["Computer Vision", "Deep Learning", "Industrial Cameras", "Python"],
+      "impact": "Achieves 99.8% defect detection accuracy, reducing warranty claims by 70%."
+    },
+    {
+      "id": 20,
+      "title": "Smart Parking Management",
+      "category": "software",
+      "status": "active",
+      "description": "AI-powered parking management system for urban areas.",
+      "inventor": "Sophie Martin",
+      "year": 2024,
+      "icon": "🚗",
+      "features": [
+        "Real-time space availability",
+        "Dynamic pricing",
+        "Mobile payment integration",
+        "Predictive availability"
+      ],
+      "technologies": ["Computer Vision", "Cloud Computing", "Mobile Apps", "IoT"],
+      "impact": "Reduces time spent looking for parking by 40% in pilot cities."
+    },
+    {
+      "id": 21,
+      "title": "Biodegradable Electronics",
+      "category": "renewable",
+      "status": "prototype",
+      "description": "Electronic components made from biodegradable materials for sustainable tech.",
+      "inventor": "Dr. Nina Kowalski",
+      "year": 2025,
+      "icon": "🌱",
+      "features": [
+        "Plant-based substrates",
+        "Fully biodegradable",
+        "Standard electronic functions",
+        "Minimal environmental impact"
+      ],
+      "technologies": ["Materials Science", "Organic Electronics", "Chemistry", "Nanotechnology"],
+      "impact": "Potential to eliminate billions of pounds of e-waste annually."
+    },
+    {
+      "id": 22,
+      "title": "Voice-Controlled Wheelchair",
+      "category": "medical",
+      "status": "active",
+      "description": "Advanced wheelchair with voice control and autonomous navigation features.",
+      "inventor": "Ahmed Hassan",
+      "year": 2024,
+      "icon": "♿",
+      "features": [
+        "Natural language voice control",
+        "Obstacle avoidance",
+        "Route planning",
+        "Emergency stop system"
+      ],
+      "technologies": ["Speech Recognition", "Computer Vision", "Robotics", "Raspberry Pi"],
+      "impact": "Provides greater independence to individuals with limited mobility."
+    }
+  ]
+}
