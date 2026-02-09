@@ -27,6 +27,8 @@
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s ease;
+    --font-body: "Source Sans 3", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -35,7 +37,7 @@ html {
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -70,10 +72,16 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--font-heading);
     line-height: 1.2;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-dark);
+}
+
+.nav-title-main,
+.footer-title-main {
+    font-family: var(--font-heading);
 }
 
 h1 {
@@ -97,6 +105,7 @@ button {
 
 /* ===== Navigation ===== */
 .main-navbar {
+    background-color: var(--primary-dark);
     background: linear-gradient(
         135deg,
         var(--primary-color) 0%,
@@ -128,11 +137,15 @@ button {
     justify-content: center;
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
+    color: var(--primary-dark);
 }
 
 .nav-titles {
     display: flex;
     flex-direction: column;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    background-color: rgba(13, 58, 102, 0.6);
 }
 
 .nav-title-main {
@@ -180,10 +193,11 @@ button {
     list-style: none;
     gap: 2rem;
     align-items: center;
+    color: var(--text-light);
 }
 
 .nav-links a {
-    color: var(--text-light);
+    color: inherit;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -192,7 +206,8 @@ button {
 
 .nav-links a:hover,
 .nav-links a.active {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--accent-color);
+    color: var(--text-dark);
 }
 
 .nav-login-li {
@@ -201,6 +216,7 @@ button {
 
 /* ===== Page Header ===== */
 .page-header {
+    background-color: var(--primary-dark);
     background: linear-gradient(
         135deg,
         var(--primary-color) 0%,
@@ -209,6 +225,10 @@ button {
     color: var(--text-light);
     padding: 4rem 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .page-header h1 {
@@ -222,6 +242,14 @@ button {
     color: rgba(255, 255, 255, 0.9);
     max-width: 800px;
     margin: 0 auto;
+}
+
+.page-header-media img {
+    width: min(100%, 720px);
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
 /* ===== Loading Spinner ===== */
@@ -272,6 +300,7 @@ button {
     z-index: 2000;
     padding: 1rem;
     overflow-y: auto;
+    color: var(--text-light);
 }
 
 .modal[hidden] {
@@ -289,6 +318,7 @@ button {
     position: relative;
     box-shadow: var(--shadow-lg);
     animation: modalSlideIn 0.3s ease;
+    color: var(--text-dark);
 }
 
 .modal-large {
@@ -409,6 +439,7 @@ button {
 
 /* ===== Footer ===== */
 .site-footer {
+    background-color: #051829;
     background: linear-gradient(135deg, var(--primary-dark) 0%, #051829 100%);
     color: var(--text-light);
     margin-top: 4rem;
@@ -438,6 +469,7 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
+    color: var(--primary-dark);
 }
 
 .footer-titles {
@@ -456,7 +488,7 @@ button {
 }
 
 .footer-desc {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
@@ -642,6 +674,19 @@ button {
     border-bottom: 3px solid var(--secondary-color);
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+}
+
+.attributions-hero {
+    margin: 1.5rem 0 2rem;
+}
+
+.attributions-hero img {
+    width: min(100%, 720px);
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--border-color);
+    margin: 0 auto;
 }
 
 .attributions-container h2 {

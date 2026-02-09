@@ -1,29 +1,36 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta
             name="description"
             content="Engineering Inventors Club - A community of innovators, creators, and engineers pushing the boundaries of technology and invention."
-        />
-        <meta name="author" content="Engineering Inventors Club" />
-        <meta property="og:title" content="Engineering Inventors Club - Home" />
+       >
+        <meta name="author" content="Engineering Inventors Club">
+        <meta property="og:title" content="Engineering Inventors Club - Home">
         <meta
             property="og:description"
             content="Join a community of innovators, creators, and engineers pushing the boundaries of technology."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="images/hero.webp" />
+       >
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://gabrielchboff.github.io/wdd231/finalproject/">
+        <meta property="og:image" content="https://gabrielchboff.github.io/wdd231/finalproject/images/hero.webp">
         <title>Home - Engineering Inventors Club</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+       >
         <link
             rel="icon"
             type="image/svg+xml"
-            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E"
-        />
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/home.css" />
-        <script type="module" defer src="scripts/home.js"></script>
+            href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E"
+       >
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <script type="module" src="scripts/home.js"></script>
     </head>
     <body>
         <header>
@@ -70,7 +77,15 @@
                     <button id="joinBtn" class="cta-button">
                         Join Our Community
                     </button>
-                    
+                    <div class="hero-media">
+                        <img
+                            src="images/hero.webp"
+                            alt="Engineering team collaborating around a prototype in a modern workshop"
+                            width="640"
+                            height="360"
+                            loading="lazy"
+                        >
+                    </div>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-card">
@@ -287,11 +302,11 @@
                             id="fullName"
                             name="fullName"
                             required
-                        />
+                       >
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="specialty">Engineering Specialty *</label>
@@ -328,7 +343,7 @@
                             min="0"
                             max="50"
                             required
-                        />
+                       >
                     </div>
                     <div class="form-group">
                         <label for="interests">Project Interests</label>
@@ -345,7 +360,7 @@
                                 type="checkbox"
                                 name="newsletter"
                                 value="yes"
-                            />
+                           >
                             Subscribe to our monthly newsletter
                         </label>
                     </div>
